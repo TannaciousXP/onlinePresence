@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TannaciousXP/onlinePresence/issues"
   },
-  "homepage": "https://github.com/TannaciousXP/onlinePresence#readme"
+  "homepage": "https://github.com/TannaciousXP/onlinePresence#readme",
+  "dependencies": {
+    "webpack": "^3.6.0"
+  }
 }
