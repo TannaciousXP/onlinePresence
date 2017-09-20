@@ -1,0 +1,19 @@
+{
+  "name": "pxtan",
+  "version": "1.0.0",
+  "description": "Showcase my work as a developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TannaciousXP/pxtan.git"
+  },
+  "author": "Peter X. Tan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TannaciousXP/onlinePresence/issues"
+  },
+  "homepage": "https://github.com/TannaciousXP/onlinePresence#readme"
+}
