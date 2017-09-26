@@ -1,0 +1,7 @@
+{
+  "name": "Peter X. Tan",
+  "description": "Webprofile",
+  "repository": "https://github.com/TannaciousXP/pxtan.git",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
