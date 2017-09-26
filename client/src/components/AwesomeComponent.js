@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class AwesomeComponent extends React.Component {
+class AwesomeComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
