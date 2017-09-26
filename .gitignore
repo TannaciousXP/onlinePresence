@@ -1,5 +1,16 @@
+### node etc ###
+
+# Logs
+logs
+*.log
+
+# Compiled Dirs (http://nodejs.org/api/addons.html)
+build/
+
+
 # Node Build artifacts
 node_modules
 
 # Bundle
-src/client/public/bundle.js
+client/dist/public/bundle.js
+
