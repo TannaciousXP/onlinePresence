@@ -1,1 +1,5 @@
+# Node Build artifacts
 node_modules
+
+# Bundle
+src/client/public/bundle.js
