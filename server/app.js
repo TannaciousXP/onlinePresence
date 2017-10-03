@@ -11,8 +11,13 @@ app.use(bodyParser.json());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(expres.static(__dirname + '/../client/dist/public'));
+app.use(expres.static(__dirname + '../client/dist/public'));
 
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log('PXT app listening on port ' + PORT);
+});
 
 
 module.exports = app;
