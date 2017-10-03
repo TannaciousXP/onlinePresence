@@ -11,12 +11,20 @@ var config = {
     filename: 'bundle.js'
   },
   devtool: '#source-map',
-  module : {
+  module: {
     loaders : [
       {
-        test : /\.(js|jsx)$/,
-        include : SRC_DIR,
-        loader : 'babel-loader'
+        test: /\.(js|jsx)$/,
+        include: SRC_DIR,
+        exclude: ['node_modules'],
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['react', 'es2015']
+            }
+          }
+        ]
       }
     ]
   }
