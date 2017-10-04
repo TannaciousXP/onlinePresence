@@ -6,8 +6,7 @@
   "scripts": {
     "start": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack -d -w",
-    "build": "webpack -p -w"
+    "build": "webpack --display-error-details --watch"
   },
   "repository": {
     "type": "git",
