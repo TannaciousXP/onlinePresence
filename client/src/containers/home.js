@@ -6,7 +6,7 @@ class Home extends Component {
   }
   render() {
     return (
-      <div>Hello PXHTAN!</div>
+      <div>Hello PXHTAN! REACT!</div>
     );
   }
 }
