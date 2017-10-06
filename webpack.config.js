@@ -1,8 +1,8 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var SRC_DIR = path.resolve(__dirname, 'client/src');
-var DIST_DIR = path.resolve(__dirname, 'public/dist');
+var SRC_DIR = path.join(__dirname, 'client/src');
+var DIST_DIR = path.join(__dirname, 'public/dist');
 
 var config = {
   entry: `${SRC_DIR}/app`,
