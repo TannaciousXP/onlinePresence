@@ -1,106 +1,45 @@
 <% include ../head.ejs %>
-<div class="ui styled accordion">
-  <div class="active title">
-    <i class="dropdown icon"></i>
-    Level 1
-  </div>
-  <div class="active content">
-    Welcome to level 1
-    <div class="accordion">
-      <div class="active title">
+<div class="ui menu">
+    <a class="item">
+      Home
+    </a>
+    <div class="ui pointing dropdown link item">
+      <span class="text">Shopping</span>
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <div class="header">Categories</div>
+        <div class="item">
           <i class="dropdown icon"></i>
-          Level 1A
-      </div>
-      <div class="active content">
-        <p>Level 1A Contents</p>
-        <div class="accordion">
-          <div class="title">
-              <i class="dropdown icon"></i>
-              Level 1A-A
-          </div>
-          <div class="content">
-              Level 1A-A Contents
-          </div>
-          <div class="title">
-              <i class="dropdown icon"></i>
-              Level 1A-B
-          </div>
-          <div class="content">
-              Level 1A-B Contents
+          <span class="text">Clothing</span>
+          <div class="menu">
+            <div class="header">Mens</div>
+            <div class="item">Shirts</div>
+            <div class="item">Pants</div>
+            <div class="item">Jeans</div>
+            <div class="item">Shoes</div>
+            <div class="divider"></div>
+            <div class="header">Womens</div>
+            <div class="item">Dresses</div>
+            <div class="item">Shoes</div>
+            <div class="item">Bags</div>
           </div>
         </div>
-      </div>
-      <div class="title">
-          <i class="dropdown icon"></i>
-          Level 1B
-      </div>
-      <div class="content">
-          Level 1B Contents
-      </div>
-      <div class="title">
-          <i class="dropdown icon"></i>
-          Level 1C
-      </div>
-      <div class="content">
-          Level 1C Contents
+        <div class="item">Home Goods</div>
+        <div class="item">Bedroom</div>
+        <div class="divider"></div>
+        <div class="header">Order</div>
+        <div class="item">Status</div>
+        <div class="item">Cancellations</div>
       </div>
     </div>
+    <a class="item">
+      Forums
+    </a>
+    <a class="item">
+      Contact Us
+    </a>
   </div>
-  <div class="title">
-    <i class="dropdown icon"></i>
-    Level 2
-  </div>
-  <div class="content">
-    <p>Welcome to level 2</p>
-    <div class="accordion">
-      <div class="active title">
-        <i class="dropdown icon"></i>
-        Level 2A
-      </div>
-      <div class="active content">
-        <p>Level 2A Contents</p>
-        <div class="accordion">
-          <div class="title">
-              <i class="dropdown icon"></i>
-              Level 2A-A
-          </div>
-          <div class="content">
-              Level 2A-A Contents
-          </div>
-          <div class="title">
-              <i class="dropdown icon"></i>
-              Level 2A-B
-          </div>
-          <div class="content">
-              Level 2A-B Contents
-          </div>
-        </div>
-      </div>
-      <div class="title">
-          <i class="dropdown icon"></i>
-          Level 2B
-      </div>
-      <div class="content">
-          Level 2B Contents
-      </div>
-      <div class="title">
-          <i class="dropdown icon"></i>
-          Level 2C
-      </div>
-      <div class="content">
-          Level 2C Contents
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-const $ = require('jquery');
-$('.trigger .accordion')
-.accordion({
-  selector: {
-    trigger: '.title .icon'
-  }
-})
-;
-</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    $('.ui.dropdown').dropdown('show');
+  </script>
 <% include ../foot.ejs %>
