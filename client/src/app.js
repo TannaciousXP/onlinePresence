@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import ReactDOM, {render} from 'react-dom';
 
 import { BrowserRouter } from 'react-router-dom';
-import { browserHistory } from 'react-router';
 
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
