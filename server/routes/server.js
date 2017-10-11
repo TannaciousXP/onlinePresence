@@ -17,7 +17,13 @@ router.route('/about')
 // Render projects page
 router.route('/projects')
   .get((req, res) => {
-    res.render('pages/projects.ejs', { title: 'Project' });
+    res.render('pages/projects.ejs', { title: 'Projects' });
   });
+
+// Render blogs page
+router.route('/blogs')
+.get((req, res) => {
+  res.render('pages/blogs.ejs', { title: 'Blogs' });
+});
 
 module.exports = router;
