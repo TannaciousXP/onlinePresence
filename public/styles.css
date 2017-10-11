@@ -50,5 +50,11 @@ table {
 /* ---------------------------------------- */
 
 .ui.secondary.pointing.menu .active.item {
-	border-color: red !important;
+	border-color: #CF000F !important;
 }	
+
+/* 
+alizarin: #e74c3c
+monza: #CF000F
+true red: #8F1D21
+*/
