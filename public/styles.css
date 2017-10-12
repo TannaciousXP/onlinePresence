@@ -66,6 +66,16 @@ table {
 	padding-bottom: 0.3125em !important;
 }	
 
+
+.loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;	
+}
+
+
 /* 
 alizarin: #e74c3c
 monza: #CF000F
