@@ -128,9 +128,20 @@ table {
 	position: relative;
 	text-align: center !important;
 }
+.ui.borderless.menu.inverted a:hover {
+	color: #CF000F;
+}
 
 .ui.borderless.menu.inverted .icon {
 	color: #CF000F;
+}
+
+.ui.borderless.menu.inverted img {
+	height: 1em;
+	width: 1em;
+	vertical-align: middle;
+	font-size: 1.5em;
+	margin: 0px 0.35em 0px 0px;
 }
 
 /* 
