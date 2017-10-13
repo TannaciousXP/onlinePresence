@@ -1,20 +1,27 @@
 import React, {Component} from 'react';
 
-import Awesome from '../components/AwesomeComponent';
+
 import Preloader from '../components/Preloader';
 
-class Home extends Component {
+export default class Home extends Component {
   constructor(props){
     super(props);
+    this.state = {
+      isLoading: true
+    };
   }
+  // componentWillMount() {
+  //   if (this.state.isLoading) {
+  //     return <Preloader/>;
+  //   }    
+  // }
+  // componentDidMount() {
+  //   this.setState({isLoading: false});
+  // }
   render() {
     return (
       <div>Hello PXHTAN! REACT!
-        <Awesome/>
-        <Preloader/>
       </div>
     );
   }
 }
-
-export default Home;
