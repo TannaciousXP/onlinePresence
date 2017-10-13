@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/* ---------------------------------------- */
+/* Header ---------------------------------------- */
 
 .ui.inverted.vertical.segment {
 	padding-top: 0em;
@@ -66,6 +66,7 @@ table {
 	padding-bottom: 0.3125em !important;
 }	
 
+/* Preloader ---------------------------------------- */
 
 #preloader {
 	position: absolute;
@@ -115,7 +116,22 @@ table {
 	100% {opacity: 0.8; transform: translateY(0px); box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);}
 }
 
+/* Footer---------------------------------------- */
 
+.ui.borderless.menu.inverted {
+	position: absolute;
+	bottom: 0px;
+	border-radius: 0%;	
+}
+
+.ui.borderless.menu.inverted a {
+	position: relative;
+	text-align: center !important;
+}
+
+.ui.borderless.menu.inverted .icon {
+	color: #CF000F;
+}
 
 /* 
 alizarin: #e74c3c
