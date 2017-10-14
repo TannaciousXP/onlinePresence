@@ -47,6 +47,16 @@ table {
 	border-spacing: 0;
 }
 
+
+
+/* Body ---------------------------------------- */
+
+body, html {
+  overflow: hidden;
+  height: 100%;
+}
+
+
 /* Header ---------------------------------------- */
 
 .ui.inverted.vertical.segment {
@@ -138,10 +148,6 @@ h3.ui.header {
 	bottom: 0px;
 	border-radius: 0%;
 	justify-content: center;
-}
-
-.ui.borderless.menu.inverted > a {
-	position: relative;
 }
 
 .ui.borderless.menu.inverted a:hover {
