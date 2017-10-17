@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-
-
-import Preloader from '../components/Preloader';
+import { Grid, Image } from 'semantic-ui-react';
 
 export default class Home extends Component {
   constructor(props){
@@ -10,14 +8,7 @@ export default class Home extends Component {
       isLoading: true
     };
   }
-  // componentWillMount() {
-  //   if (this.state.isLoading) {
-  //     return <Preloader/>;
-  //   }    
-  // }
-  // componentDidMount() {
-  //   this.setState({isLoading: false});
-  // }
+
   render() {
     return (
       <div>Hello PXHTAN! REACT!
