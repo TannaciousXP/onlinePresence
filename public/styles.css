@@ -68,8 +68,13 @@ body {
 #app {
 	flex-grow: 1;
 	overflow-y: auto;
-	vertical-align: middle;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-image: url('/assets/photos/Stars.jpg');
 }
 
 footer {
