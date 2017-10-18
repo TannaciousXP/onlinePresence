@@ -54,10 +54,27 @@ table {
 body, html {
   overflow-y: auto;
 	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 	min-width: 320px;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+}
 
+#app {
+	flex-grow: 1;
+	overflow-y: auto;
+	vertical-align: middle;
+	text-align: center;
+}
+
+footer {
+	min-height:53px;
+}
 /* Header ---------------------------------------- */
 
 .ui.inverted.vertical.segment {
