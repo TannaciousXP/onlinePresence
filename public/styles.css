@@ -51,18 +51,20 @@ table {
 
 /* Body ---------------------------------------- */
 
-body, html {
+html {
   overflow-y: auto;
 	height: 100%;
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	min-width: 320px;
+  min-width: 320px;
+  background-color: #323241;
 }
 
 body {
 	display: flex;
-	flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
 }
 
 #app {
@@ -72,9 +74,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	margin-top: 5%;
-	margin-bottom: 5%;
 	background-image: url('/assets/photos/Stars.jpg');
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 footer {
