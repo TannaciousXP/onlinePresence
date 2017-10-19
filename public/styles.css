@@ -57,7 +57,7 @@ html {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-  min-width: 320px;
+  min-width: 600px;
   background-color: #323241;
 }
 
@@ -65,6 +65,10 @@ body {
 	display: flex;
   flex-direction: column;
   background-color: #fff;
+}
+
+#nav {
+  margin: 0% !important;
 }
 
 #app {
@@ -89,6 +93,9 @@ footer {
 .ui.move.reveal .visible.content {
   width: 100%;
 }
+.ui.move.reveal .hidden.content {
+  height: 100%;
+}
 /* Change the opacticy of the raised segment */
 .ui.raised.segment {
   background:rgba(255, 255, 255, 0.5);
@@ -97,9 +104,13 @@ footer {
 .head.intro {
   color: #CF000F;
 }
-
+/* Change the intro to have white font color */
 .intro.content {
   color: #fff;
+}
+/* Change reveal content Image height to 150px */
+.ui.move.reveal .hidden.content .ui.small.image {
+  height: 150px;
 }
 /* Header ---------------------------------------- */
 

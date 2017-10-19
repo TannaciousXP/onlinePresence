@@ -76,7 +76,7 @@ export default class Home extends Component {
                 <Image
                   size='small'
                   shape='circular'
-                  src='/assets/photos/Photoshoot.jpg'
+                  src='/assets/photos/fitness.jpg'
                   centered
                 />
               </Reveal.Content>
@@ -118,8 +118,9 @@ export default class Home extends Component {
                 <Image
                   size='small'
                   shape='circular'
-                  src='/assets/photos/Photoshoot.jpg'
+                  src='/assets/photos/pets.jpg'
                   centered
+
                 />
               </Reveal.Content>
             </Reveal>
