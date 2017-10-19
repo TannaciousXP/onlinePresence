@@ -39,7 +39,7 @@ export default class Home extends Component {
           </Segment>
         </Grid.Row>
 
-        <Grid.Row columns={3}>
+        <Grid.Row columns={4}>
           <Grid.Column>
             <Reveal animated='move down'>
               <Reveal.Content visible>
@@ -56,6 +56,49 @@ export default class Home extends Component {
                   shape='circular'
                   src='/assets/photos/Photoshoot.jpg'
                   centered
+                />
+              </Reveal.Content>
+            </Reveal>
+          </Grid.Column>
+
+          <Grid.Column>
+            <Reveal animated='move down'>
+              <Reveal.Content visible>
+                <Image
+                  shape='circular'
+                  size='small'
+                  centered
+                  src='/assets/logos/Fitness.png'
+                />
+
+              </Reveal.Content>
+              <Reveal.Content hidden>
+                <Image
+                  size='small'
+                  shape='circular'
+                  src='/assets/photos/Photoshoot.jpg'
+                  centered
+                />
+              </Reveal.Content>
+            </Reveal>
+          </Grid.Column>
+
+          <Grid.Column>
+            <Reveal animated='move down'>
+              <Reveal.Content visible>
+                <Image
+                  shape='circular'
+                  size='small'
+                  centered
+                  src='/assets/logos/Meditation.png'
+                />
+              </Reveal.Content>
+              <Reveal.Content hidden>
+                <Image
+                  shape='circular'
+                  size='small'
+                  centered
+                  src='/assets/photos/Photoshoot.jpg'
                 />
               </Reveal.Content>
             </Reveal>
@@ -78,22 +121,6 @@ export default class Home extends Component {
                   src='/assets/photos/Photoshoot.jpg'
                   centered
                 />
-              </Reveal.Content>
-            </Reveal>
-          </Grid.Column>
-          <Grid.Column>
-            <Reveal animated='move down'>
-              <Reveal.Content visible>
-                <Image
-                  shape='circular'
-                  size='small'
-                  centered
-                  src='/assets/logos/Fitness.png'
-                />
-
-              </Reveal.Content>
-              <Reveal.Content hidden>
-
               </Reveal.Content>
             </Reveal>
           </Grid.Column>
