@@ -20,7 +20,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -81,8 +81,21 @@ footer {
 	min-height:53px;
 }
 
+/* Having the content able to be centered */
 .ui.move.reveal .visible.content {
   width: 100%;
+}
+/* Change the opacticy of the raised segment */
+.ui.raised.segment {
+  background:rgba(255, 255, 255, 0.5);
+}
+/* Change the ui.cell.grid border color */
+.head.intro {
+  color: #CF000F;
+}
+
+.intro.content {
+  color: #fff;
 }
 /* Header ---------------------------------------- */
 
