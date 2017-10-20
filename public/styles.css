@@ -88,7 +88,11 @@ body {
 footer {
 	min-height:53px;
 }
+/*
+border-top: 1px solid rgba(207, 0, 15, .55);
+border-bottom: 1px solid rgba(255, 255, 255, .2);
 
+*/
 /* Having the content able to be centered */
 .ui.move.reveal .visible.content {
   width: 100%;
@@ -100,9 +104,10 @@ footer {
 .ui.raised.segment {
   background:rgba(255, 255, 255, 0.5);
 }
-/* Change the ui.cell.grid border color */
+/* Change the ui.cell.grid border color and margin*/
 .head.intro {
   color: #CF000F;
+  margin-bottom: 0%;
 }
 /* Change the intro to have white font color */
 .intro.content {
@@ -111,6 +116,11 @@ footer {
 /* Change reveal content Image height to 150px */
 .ui.move.reveal .hidden.content .ui.small.image {
   height: 150px;
+}
+/* Change divider color to red */
+.ui.grid.column .ui.divider {
+  border-top: 1px solid rgba(207, 0, 15, .55);
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 /* Header ---------------------------------------- */
 
