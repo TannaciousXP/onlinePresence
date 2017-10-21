@@ -1,15 +1,35 @@
 import React, {Component} from 'react';
-import { Grid, Image, Header, Segment, Reveal, Divider } from 'semantic-ui-react';
+import {
+  Grid,
+  Image,
+  Header,
+  Segment,
+  Reveal,
+  Divider,
+  Modal,
+  Button
+} from 'semantic-ui-react';
 
 export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoading: true
+      open: false,
     };
+    this.close = this.close.bind(this);
+    this.show = this.show.bind(this);
+  }
+
+  show() {
+    this.setState({open: true});
+  }
+
+  close() {
+    this.setState({open: false});
   }
 
   render() {
+    const { open } = this.state;
     return (
       <Grid container verticalAlign='middle' centered padded>
         <Grid.Row stretched>
@@ -115,13 +135,45 @@ export default class Home extends Component {
 
               </Reveal.Content>
               <Reveal.Content hidden>
-                <Image
-                  size='small'
-                  shape='circular'
-                  src='/assets/photos/pets.jpg'
-                  centered
-
-                />
+                <Button
+                  onClick={this.show}
+                >
+                  <Image
+                    size='small'
+                    shape='circular'
+                    src='/assets/photos/pets.jpg'
+                    centered
+                  /></Button>
+                <Modal
+                  onClose={this.close}
+                  open={open}
+                  dimmer='blurring'
+                >
+                  <Modal.Header>My Pets</Modal.Header>
+                  <Modal.Content image>
+                    <Image
+                      wrapped
+                      size='medium'
+                      src='/assets/photos/pets.jpg'
+                      dimmer='blurring'
+                    />
+                    <Modal.Description>
+                      <Header>My Pets</Header>
+                      <p>YOYO</p>
+                      <p>YOYO</p>
+                    </Modal.Description>
+                  </Modal.Content>
+                  <Modal.Actions>
+                    <Button
+                      inverted
+                      color='red'
+                      icon='hand spock'
+                      labelPosition='right'
+                      content='Cool beans'
+                      onClick={this.close}
+                    />
+                  </Modal.Actions>
+                </Modal>
               </Reveal.Content>
             </Reveal>
           </Grid.Column>

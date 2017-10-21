@@ -90,14 +90,32 @@ footer {
 /*
 border-top: 1px solid rgba(207, 0, 15, .55);
 border-bottom: 1px solid rgba(255, 255, 255, .2);
-
 */
+
+/* Change button color of red */
+.ui.inverted.red.button {
+  color: #CF000F;
+  box-shadow: rgb(207, 0, 15) 0px 0px 0px 2px inset
+}
+.ui.inverted.red.button:hover {
+  background-color: #CF000F;
+  border-color: #CF000F;
+}
+
+
 /* Having the content able to be centered */
 .ui.move.reveal .visible.content {
   width: 100%;
 }
 .ui.move.reveal .hidden.content {
   height: 100%;
+}
+/* Change the image padding and marigin */
+.ui.move.reveal .hidden.content .ui.button {
+  padding: 0%;
+  margin: 0%;
+  background: transparent;
+  width: 100%;
 }
 /* Change the opacticy of the raised segment */
 .ui.raised.segment {
@@ -121,6 +139,8 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
   border-top: 1px solid rgba(207, 0, 15, .55);
   border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
+
+
 /* Header ---------------------------------------- */
 
 .ui.inverted.vertical.segment {
