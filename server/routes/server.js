@@ -7,7 +7,7 @@ router.route('/')
   .get((req, res) => {
     res.render('pages/home.ejs', {
       title: 'Home',
-      background: `background-image: url('/assets/photos/Stars.jpg')`,
+      background: `background-image: url('/assets/photos/home.jpg')`,
     });
   });
 
@@ -16,6 +16,7 @@ router.route('/about')
   .get((req, res) => {
     res.render('pages/about.ejs', {
       title: 'About',
+      background: `background-image: url('/assets/photos/about.jpg')`,
     });
   });
 
@@ -23,7 +24,8 @@ router.route('/about')
 router.route('/projects')
   .get((req, res) => {
     res.render('pages/projects.ejs', {
-      title: 'Projects'
+      title: 'Projects',
+      background: `background-image: url('/assets/photos/projects.jpg')`,
     });
   });
 

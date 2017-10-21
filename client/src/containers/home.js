@@ -36,7 +36,7 @@ export default class Home extends Component {
           <Segment raised textAlign='left'>
             <Grid columns={2} verticalAlign='middle'>
               <Grid.Column width={5}>
-                <Image size='medium' shape='circular' src='/assets/photos/Photoshoot.jpg'/>
+                <Image size='medium' shape='circular' src='/assets/photos/photoshoot.jpg'/>
               </Grid.Column>
 
               <Grid.Column width={11}>
@@ -66,7 +66,7 @@ export default class Home extends Component {
                 <Image
                   size='small'
                   shape='circular'
-                  src='/assets/logos/Learning.png'
+                  src='/assets/logos/learning.png'
                   centered
                 />
               </Reveal.Content>
@@ -74,7 +74,7 @@ export default class Home extends Component {
                 <Image
                   size='small'
                   shape='circular'
-                  src='/assets/photos/Photoshoot.jpg'
+                  src='/assets/photos/photoshoot.jpg'
                   centered
                 />
               </Reveal.Content>
@@ -88,7 +88,7 @@ export default class Home extends Component {
                   shape='circular'
                   size='small'
                   centered
-                  src='/assets/logos/Fitness.png'
+                  src='/assets/logos/fitness.png'
                 />
 
               </Reveal.Content>
@@ -110,7 +110,7 @@ export default class Home extends Component {
                   shape='circular'
                   size='small'
                   centered
-                  src='/assets/logos/Meditation.png'
+                  src='/assets/logos/meditate.png'
                 />
               </Reveal.Content>
               <Reveal.Content hidden>
@@ -118,7 +118,7 @@ export default class Home extends Component {
                   shape='circular'
                   size='small'
                   centered
-                  src='/assets/photos/Photoshoot.jpg'
+                  src='/assets/photos/photoshoot.jpg'
                 />
               </Reveal.Content>
             </Reveal>
@@ -130,7 +130,7 @@ export default class Home extends Component {
                   shape='circular'
                   size='small'
                   centered
-                  src='/assets/logos/Pets.png'
+                  src='/assets/logos/pets.png'
                 />
 
               </Reveal.Content>
