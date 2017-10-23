@@ -139,14 +139,8 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
   color: #fff;
 }
 /* Change reveal content Image height to 150px */
-.ui.move.reveal .hidden.content .ui.small.image {
+.ui.move.reveal .ui.small.image {
   height: 150px;
-}
-/* Change Grid column 4 height */
-.ui.centered.container.padded.middle.aligned.grid .four.column.row .column{
-  justify-content: center;
-	align-items: center;
-  align-content: center;
 }
 /* Change divider color to red */
 .ui.grid.column .ui.divider {
