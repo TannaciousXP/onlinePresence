@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
 
-import NameReducer from './reducer_name';
+import userName from './reducer_name';
+import FetchedRepo from './reducer_fetchRepo';
 
 const rootReducer = combineReducers({
-  name: NameReducer,
+  userRepo: userName,
+  fetchedRepo: FetchedRepo
 });
 
 export default rootReducer;
