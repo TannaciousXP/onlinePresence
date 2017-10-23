@@ -5,9 +5,12 @@ export const FETCH_NAME = 'fetch_name';
 // Redux isFetched state
 export const IS_REPO_FETCHED = 'is_repo_fetched';
 export const REPO_FETCHED = 'repo_fetched';
+// Redux isModalOpen state
+export const CLOSE_MODAL = 'close_modal';
+export const SHOW_MODAL = 'show_modal';
 
 
-/* name state ----------------------------------- */
+/* userName state ----------------------------------- */
 
 // Return userName for Github repo
 export let fetchName = function() {
@@ -35,4 +38,28 @@ export let repoFetched = function() {
   };
 };
 
+/* showModal state----------------------------------- */
+// Return false closeModal
+export let closeModal = function() {
+  return {
+    type: CLOSE_MOADL,
+    payload: false
+  };
+};
+
+// Return true for showModal
+export let showModal = function() {
+  return {
+    type: SHOW_MODAL,
+    payload: true
+  };
+};
+
+
 /* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+
