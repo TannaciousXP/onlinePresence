@@ -8,7 +8,7 @@ import {
 } from 'semantic-ui-react';
 
 import { connect } from 'react-redux';
-import { closeModal, showModal } from '../../actions';
+import { closeModal, showModal, viewModal } from '../../actions';
 
 export class Meditate extends Component {
   constructor(props) {
@@ -21,6 +21,7 @@ export class Meditate extends Component {
   }
 
   show() {
+    this.props.viewModal('Meditate');
     this.props.showModal();
   }
 
@@ -28,11 +29,8 @@ export class Meditate extends Component {
     this.props.closeModal();
   }
 
-  componentWillMount() {
-    this.props.closeModal();
-  }
   render() {
-    let { isModalOpen } = this.props;
+    let { isModalOpen, renderModal } = this.props;
     let { modal } = this.state;
     return (
       <Reveal animated='move down'>
@@ -56,7 +54,7 @@ export class Meditate extends Component {
             /></Button>
           <Modal
             onClose={this.close}
-            open={ (isModalOpen && modal === 'Meditate') ? true : false}
+            open={ (isModalOpen && modal === renderModal) ? true : false}
             dimmer='blurring'
           >
             <Modal.Header>Meditation</Modal.Header>
@@ -93,7 +91,12 @@ export class Meditate extends Component {
 const mapStateToProps = (state) => {
   return {
     isModalOpen: state.isModalOpen,
+    renderModal: state.renderModal,
   };
 };
 
-export default connect (mapStateToProps, { closeModal, showModal })(Meditate);
+export default connect (mapStateToProps, {
+  closeModal,
+  showModal,
+  viewModal
+})(Meditate);

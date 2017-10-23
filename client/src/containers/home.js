@@ -97,12 +97,13 @@ export default class Home extends Component {
           <Grid.Column>
           // Use modal component for meditate;
             <Meditate/>
-
           </Grid.Column>
+
           <Grid.Column>
           // Use modal component for pets;
             <Pets/>
           </Grid.Column>
+
         </Grid.Row>
       </Grid>
     );

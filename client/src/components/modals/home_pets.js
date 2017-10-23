@@ -8,7 +8,7 @@ import {
 } from 'semantic-ui-react';
 
 import { connect } from 'react-redux';
-import { closeModal, showModal } from '../../actions';
+import { closeModal, showModal, viewModal } from '../../actions';
 
 export class Pets extends Component {
   constructor(props) {
@@ -16,11 +16,13 @@ export class Pets extends Component {
     this.state = {
       modal: 'Pets'
     };
+    const { modal } = this.state;
     this.close = this.close.bind(this);
     this.show = this.show.bind(this);
   }
 
   show() {
+    this.props.viewModal(this.state.modal);
     this.props.showModal();
   }
 
@@ -28,12 +30,8 @@ export class Pets extends Component {
     this.props.closeModal();
   }
 
-  componentWillMount() {
-    this.props.closeModal();
-  }
-
   render() {
-    let { isModalOpen } = this.props;
+    let { isModalOpen, renderModal } = this.props;
     let { modal } = this.state;
     return (
       <Reveal animated='move down'>
@@ -57,7 +55,7 @@ export class Pets extends Component {
             /></Button>
           <Modal
             onClose={this.close}
-            open={ (isModalOpen && modal === 'Pets') ? true : false }
+            open={ (isModalOpen && modal === renderModal) ? true : false }
             dimmer='blurring'
           >
             <Modal.Header>My Pets</Modal.Header>
@@ -94,7 +92,12 @@ export class Pets extends Component {
 const mapStateToProps = (state) => {
   return {
     isModalOpen: state.isModalOpen,
+    renderModal: state.renderModal,
   };
 };
 
-export default connect (mapStateToProps, { closeModal, showModal })(Pets);
+export default connect (mapStateToProps, {
+  closeModal,
+  showModal,
+  viewModal
+})(Pets);

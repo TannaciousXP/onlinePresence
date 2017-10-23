@@ -8,6 +8,7 @@ export const REPO_FETCHED = 'repo_fetched';
 // Redux isModalOpen state
 export const CLOSE_MODAL = 'close_modal';
 export const SHOW_MODAL = 'show_modal';
+// Redux viewModal state
 export const VIEW_MODAL = 'view_modal';
 
 
@@ -56,13 +57,13 @@ export let showModal = function() {
   };
 };
 
+/* viewModal state----------------------------------- */
 export let viewModal = function(str) {
   return {
     type: VIEW_MODAL,
     payload: str,
   };
 };
-
 
 /* ----------------------------------- */
 /* ----------------------------------- */
