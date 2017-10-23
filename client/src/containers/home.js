@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+// Import componenets from semantic
 import {
   Grid,
   Image,
@@ -9,27 +10,17 @@ import {
   Modal,
   Button
 } from 'semantic-ui-react';
+// Import modals
+import Meditate from '../components/modals/home_meditation';
+import Pets from '../components/modals/home_pets';
+
 
 export default class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      open: false,
-    };
-    this.close = this.close.bind(this);
-    this.show = this.show.bind(this);
-  }
-
-  show() {
-    this.setState({open: true});
-  }
-
-  close() {
-    this.setState({open: false});
   }
 
   render() {
-    const { open } = this.state;
     return (
       <Grid container verticalAlign='middle' centered padded>
         <Grid.Row stretched>
@@ -104,81 +95,17 @@ export default class Home extends Component {
           </Grid.Column>
 
           <Grid.Column>
-            <Reveal animated='move down'>
-              <Reveal.Content visible>
-                <Image
-                  shape='circular'
-                  size='small'
-                  centered
-                  src='/assets/logos/meditate.png'
-                />
-              </Reveal.Content>
-              <Reveal.Content hidden>
-                <Image
-                  shape='circular'
-                  size='small'
-                  centered
-                  src='/assets/photos/photoshoot.jpg'
-                />
-              </Reveal.Content>
-            </Reveal>
+          // Use modal component for meditate;
+            <Meditate/>
+
           </Grid.Column>
           <Grid.Column>
-            <Reveal animated='move down'>
-              <Reveal.Content visible>
-                <Image
-                  shape='circular'
-                  size='small'
-                  centered
-                  src='/assets/logos/pets.png'
-                />
-
-              </Reveal.Content>
-              <Reveal.Content hidden>
-                <Button
-                  onClick={this.show}
-                >
-                  <Image
-                    size='small'
-                    shape='circular'
-                    src='/assets/photos/pets.jpg'
-                    centered
-                  /></Button>
-                <Modal
-                  onClose={this.close}
-                  open={open}
-                  dimmer='blurring'
-                >
-                  <Modal.Header>My Pets</Modal.Header>
-                  <Modal.Content image>
-                    <Image
-                      wrapped
-                      size='medium'
-                      src='/assets/photos/pets.jpg'
-                      dimmer='blurring'
-                    />
-                    <Modal.Description>
-                      <Header>My Pets</Header>
-                      <p>YOYO</p>
-                      <p>YOYO</p>
-                    </Modal.Description>
-                  </Modal.Content>
-                  <Modal.Actions>
-                    <Button
-                      inverted
-                      color='red'
-                      icon='hand spock'
-                      labelPosition='right'
-                      content='Cool beans'
-                      onClick={this.close}
-                    />
-                  </Modal.Actions>
-                </Modal>
-              </Reveal.Content>
-            </Reveal>
+          // Use modal component for pets;
+            <Pets/>
           </Grid.Column>
         </Grid.Row>
       </Grid>
     );
   }
 }
+
