@@ -10,15 +10,28 @@ import {
   Modal,
   Button
 } from 'semantic-ui-react';
-
+// Import redux and actions
+import { connect } from 'react-redux';
+import { closeModal, showModal, viewModal } from '../actions';
 // Import modals
 import Meditate from '../components/modals/home_meditation';
 import Pets from '../components/modals/home_pets';
 
 
-export default class Home extends Component {
+class Home extends Component {
   constructor(props) {
     super(props);
+    this.close = this.close.bind(this);
+    this.show = this.show.bind(this);
+  }
+
+  show(str) {
+    this.props.viewModal(str);
+    this.props.showModal();
+  }
+
+  close() {
+    this.props.closeModal();
   }
 
   render() {
@@ -97,12 +110,12 @@ export default class Home extends Component {
 
           <Grid.Column>
             {/* Import Meditate componenet */}
-            <Meditate testing={true}/>
+            <Meditate show={this.show} close={this.close}/>
           </Grid.Column>
 
           <Grid.Column>
             {/* Import Pets componenet */}
-            <Pets/>
+            <Pets show={this.show} close={this.close}/>
           </Grid.Column>
 
         </Grid.Row>
@@ -111,3 +124,15 @@ export default class Home extends Component {
   }
 }
 
+const mapStateToProps = (state, ownProps) => {
+  return {
+    isModalOpen: state.isModalOpen,
+    renderModal: state.renderModal,
+  };
+};
+
+export default connect (mapStateToProps, {
+  closeModal,
+  showModal,
+  viewModal
+})(Home);

@@ -8,7 +8,6 @@ import {
 } from 'semantic-ui-react';
 
 import { connect } from 'react-redux';
-import { closeModal, showModal, viewModal } from '../../actions';
 
 export class Pets extends Component {
   constructor(props) {
@@ -16,22 +15,10 @@ export class Pets extends Component {
     this.state = {
       modal: 'Pets'
     };
-    const { modal } = this.state;
-    this.close = this.close.bind(this);
-    this.show = this.show.bind(this);
-  }
-
-  show() {
-    this.props.viewModal(this.state.modal);
-    this.props.showModal();
-  }
-
-  close() {
-    this.props.closeModal();
   }
 
   render() {
-    let { isModalOpen, renderModal } = this.props;
+    let { isModalOpen, renderModal, show, close } = this.props;
     let { modal } = this.state;
     return (
       <Reveal animated='move down'>
@@ -46,7 +33,7 @@ export class Pets extends Component {
 
         <Reveal.Content hidden>
           <Button
-            onClick={this.show}
+            onClick={() => show(modal)}
           ><Image
               size='small'
               shape='circular'
@@ -54,7 +41,7 @@ export class Pets extends Component {
               centered
             /></Button>
           <Modal
-            onClose={this.close}
+            onClose={close}
             open={ (isModalOpen && modal === renderModal) ? true : false }
             dimmer='blurring'
           >
@@ -79,7 +66,7 @@ export class Pets extends Component {
                 icon='hand spock'
                 labelPosition='right'
                 content='Cool beans'
-                onClick={this.close}
+                onClick={close}
               />
             </Modal.Actions>
           </Modal>
@@ -89,15 +76,13 @@ export class Pets extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
   return {
     isModalOpen: state.isModalOpen,
     renderModal: state.renderModal,
+    close: ownProps.close,
+    show: ownProps.show
   };
 };
 
-export default connect (mapStateToProps, {
-  closeModal,
-  showModal,
-  viewModal
-})(Pets);
+export default connect (mapStateToProps)(Pets);

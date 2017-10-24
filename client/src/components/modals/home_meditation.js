@@ -8,7 +8,6 @@ import {
 } from 'semantic-ui-react';
 
 import { connect } from 'react-redux';
-import { closeModal, showModal, viewModal } from '../../actions';
 
 class Meditate extends Component {
   constructor(props) {
@@ -16,22 +15,12 @@ class Meditate extends Component {
     this.state = {
       modal: 'Meditate',
     };
-    this.close = this.close.bind(this);
-    this.show = this.show.bind(this);
-  }
-
-  show() {
-    this.props.viewModal('Meditate');
-    this.props.showModal();
-  }
-
-  close() {
-    this.props.closeModal();
   }
 
   render() {
-    let { isModalOpen, renderModal } = this.props;
+    let { isModalOpen, renderModal, close, show } = this.props;
     let { modal } = this.state;
+
     return (
       <Reveal animated='move down'>
         <Reveal.Content visible>
@@ -45,7 +34,7 @@ class Meditate extends Component {
 
         <Reveal.Content hidden>
           <Button
-            onClick={this.show}
+            onClick={() => show(modal)}
           ><Image
               shape='circular'
               size='small'
@@ -53,7 +42,7 @@ class Meditate extends Component {
               src='/assets/photos/photoshoot.jpg'
             /></Button>
           <Modal
-            onClose={this.close}
+            onClose={close}
             open={ (isModalOpen && modal === renderModal) ? true : false}
             dimmer='blurring'
           >
@@ -78,7 +67,7 @@ class Meditate extends Component {
                 icon='hand spock'
                 labelPosition='right'
                 content='Cool beans'
-                onClick={this.close}
+                onClick={close}
               />
             </Modal.Actions>
           </Modal>
@@ -89,15 +78,12 @@ class Meditate extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  console.log(`Ownprops: ${JSON.stringify(ownProps)}`);
   return {
     isModalOpen: state.isModalOpen,
     renderModal: state.renderModal,
+    close: ownProps.close,
+    show: ownProps.show
   };
 };
 
-export default connect (mapStateToProps, {
-  closeModal,
-  showModal,
-  viewModal
-})(Meditate);
+export default connect (mapStateToProps)(Meditate);
