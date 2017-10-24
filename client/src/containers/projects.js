@@ -13,12 +13,6 @@ class Projects extends Component {
   }
 }
 
-// const mapStateToProps = (state, ownProps) => {
-//   return {
-//     prop: state.prop
-//   }
-// }
-
 const mapStateToProps = (state) => {
   return {
     isFetched: state.isFetched,

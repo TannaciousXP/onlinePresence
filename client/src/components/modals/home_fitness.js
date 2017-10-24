@@ -65,7 +65,7 @@ class Fitness extends Component {
                 inverted
                 color='red'
                 icon='hand spock'
-                labelPosition='right'
+                labelPosition='left'
                 content='Cool beans'
                 onClick={close}
               />

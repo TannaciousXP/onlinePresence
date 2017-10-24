@@ -45,7 +45,7 @@ class Pets extends Component {
             open={ (isModalOpen && modal === renderModal) ? true : false }
             dimmer='blurring'
           >
-            <Modal.Header>My Pets</Modal.Header>
+            <Modal.Header>PETS</Modal.Header>
             <Modal.Content image>
               <Image
                 wrapped
@@ -64,7 +64,7 @@ class Pets extends Component {
                 inverted
                 color='red'
                 icon='hand spock'
-                labelPosition='right'
+                labelPosition='left'
                 content='Cool beans'
                 onClick={close}
               />
