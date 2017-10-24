@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
+// Import for redux and actions
+import { connect } from 'react-redux';
+import { isRepoFetched, repoFetched } from '../actions';
 
-export default class Projects extends Component {
+class Projects extends Component {
   render() {
     return (
       <div>
@@ -9,3 +12,21 @@ export default class Projects extends Component {
     );
   }
 }
+
+// const mapStateToProps = (state, ownProps) => {
+//   return {
+//     prop: state.prop
+//   }
+// }
+
+const mapStateToProps = (state) => {
+  return {
+    isFetched: state.isFetched,
+    userRepo: state.userRepo
+  };
+};
+
+export default connect (mapStateToProps, {
+  isRepoFetched,
+  repoFetched
+})(Projects);

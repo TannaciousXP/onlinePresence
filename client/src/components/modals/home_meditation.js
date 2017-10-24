@@ -10,7 +10,7 @@ import {
 import { connect } from 'react-redux';
 import { closeModal, showModal, viewModal } from '../../actions';
 
-export class Meditate extends Component {
+class Meditate extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -88,7 +88,8 @@ export class Meditate extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
+  console.log(`Ownprops: ${JSON.stringify(ownProps)}`);
   return {
     isModalOpen: state.isModalOpen,
     renderModal: state.renderModal,

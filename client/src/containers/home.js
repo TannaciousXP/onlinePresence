@@ -10,6 +10,7 @@ import {
   Modal,
   Button
 } from 'semantic-ui-react';
+
 // Import modals
 import Meditate from '../components/modals/home_meditation';
 import Pets from '../components/modals/home_pets';
@@ -96,7 +97,7 @@ export default class Home extends Component {
 
           <Grid.Column>
             {/* Import Meditate componenet */}
-            <Meditate/>
+            <Meditate testing={true}/>
           </Grid.Column>
 
           <Grid.Column>
