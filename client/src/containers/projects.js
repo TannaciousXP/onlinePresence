@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 // Import for redux and actions
 import { connect } from 'react-redux';
-import { isRepoFetched, repoFetched } from '../actions';
+import { isRepoFetched, repoFetched, fetchReposList } from '../actions';
 
 class Projects extends Component {
 
   componentWillMount() {
-
+    
   }
 
   render() {
@@ -21,11 +21,13 @@ class Projects extends Component {
 const mapStateToProps = (state) => {
   return {
     isFetched: state.isFetched,
-    userRepo: state.userRepo
+    userRepo: state.userRepo,
+    listOfRepos: state.listOfRepos,
   };
 };
 
 export default connect (mapStateToProps, {
   isRepoFetched,
-  repoFetched
+  repoFetched,
+  fetchReposList,
 })(Projects);

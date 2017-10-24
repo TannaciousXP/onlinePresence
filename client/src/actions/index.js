@@ -10,7 +10,8 @@ export const CLOSE_MODAL = 'close_modal';
 export const SHOW_MODAL = 'show_modal';
 // Redux viewModal state
 export const VIEW_MODAL = 'view_modal';
-
+// Redux listOfRepos state
+export const FETCH_REPOS_LIST = 'fetch_repos_list';
 
 /* userName state ----------------------------------- */
 
@@ -57,7 +58,7 @@ export let showModal = function() {
   };
 };
 
-/* viewModal state----------------------------------- */
+/* viewModal state ----------------------------------- */
 export let viewModal = function(str) {
   return {
     type: VIEW_MODAL,
@@ -65,7 +66,15 @@ export let viewModal = function(str) {
   };
 };
 
-/* ----------------------------------- */
+/* listOFRepos state ----------------------------------- */
+export let fetchReposList = function(userName) {
+  console.log(`userName: ${userName}`);
+  const request = axios.get(`/projects/fetch/${userName}`);
+  return {
+    type: FETCH_REPOS_LIST,
+    payload: request
+  };
+};
 /* ----------------------------------- */
 /* ----------------------------------- */
 /* ----------------------------------- */
