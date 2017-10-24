@@ -39,25 +39,25 @@ class Fitness extends Component {
               shape='circular'
               size='small'
               centered
-              src='/assets/photos/photoshoot.jpg'
+              src='/assets/photos/fitness.jpg'
             /></Button>
           <Modal
             onClose={close}
             open={ (isModalOpen && modal === renderModal) ? true : false}
             dimmer='blurring'
           >
-            <Modal.Header>Meditation</Modal.Header>
+            <Modal.Header>Fitness</Modal.Header>
             <Modal.Content image>
               <Image
                 wrapped
                 size='medium'
-                src='/assets/photos/photoshoot.jpg'
+                src='/assets/photos/fitness.jpg'
                 dimmer='blurring'
               />
               <Modal.Description>
-                <Header>Meditate</Header>
-                <p>OOHMMMM</p>
-                <p>OOHMMMM</p>
+                <Header>Fitness</Header>
+                <p>ready set go!</p>
+                <p>ready set go!</p>
               </Modal.Description>
             </Modal.Content>
             <Modal.Actions>

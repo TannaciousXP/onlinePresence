@@ -16,6 +16,8 @@ import { closeModal, showModal, viewModal } from '../actions';
 // Import modals
 import Meditate from '../components/modals/home_meditation';
 import Pets from '../components/modals/home_pets';
+import Learning from '../components/modals/home_learning';
+import Fitness from '../components/modals/home_fitness';
 
 
 class Home extends Component {
@@ -65,60 +67,24 @@ class Home extends Component {
         </Grid.Row>
 
         <Grid.Row columns={4}>
+          {/* Import Learning componenet */}
           <Grid.Column>
-            <Reveal animated='move down'>
-              <Reveal.Content visible>
-                <Image
-                  size='small'
-                  shape='circular'
-                  src='/assets/logos/learning.png'
-                  centered
-                />
-              </Reveal.Content>
-              <Reveal.Content hidden>
-                <Image
-                  size='small'
-                  shape='circular'
-                  src='/assets/photos/photoshoot.jpg'
-                  centered
-                />
-              </Reveal.Content>
-            </Reveal>
+            <Learning show={this.show} close={this.close}/>
           </Grid.Column>
-
+          {/* Import Fitness componenet */}
           <Grid.Column>
-            <Reveal animated='move down'>
-              <Reveal.Content visible>
-                <Image
-                  shape='circular'
-                  size='small'
-                  centered
-                  src='/assets/logos/fitness.png'
-                />
-
-              </Reveal.Content>
-              <Reveal.Content hidden>
-                <Image
-                  size='small'
-                  shape='circular'
-                  src='/assets/photos/fitness.jpg'
-                  centered
-                />
-              </Reveal.Content>
-            </Reveal>
+            <Fitness show={this.show} close={this.close}/>
           </Grid.Column>
-
+          {/* Import Meditate componenet */}
           <Grid.Column>
-            {/* Import Meditate componenet */}
             <Meditate show={this.show} close={this.close}/>
           </Grid.Column>
-
+          {/* Import Pets componenet */}
           <Grid.Column>
-            {/* Import Pets componenet */}
             <Pets show={this.show} close={this.close}/>
           </Grid.Column>
-
         </Grid.Row>
+
       </Grid>
     );
   }
