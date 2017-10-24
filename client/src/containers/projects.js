@@ -4,6 +4,11 @@ import { connect } from 'react-redux';
 import { isRepoFetched, repoFetched } from '../actions';
 
 class Projects extends Component {
+
+  componentWillMount() {
+
+  }
+
   render() {
     return (
       <div>
