@@ -9,7 +9,7 @@ import {
 
 import { connect } from 'react-redux';
 
-export class Pets extends Component {
+class Pets extends Component {
   constructor(props) {
     super(props);
     this.state = {
