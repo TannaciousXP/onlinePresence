@@ -5,7 +5,11 @@ import { isRepoFetched, repoFetched, fetchReposList } from '../actions';
 // Import lodash
 import _ from 'lodash';
 // Import from semantic
-import { Segment } from 'semantic-ui-react';
+import {
+  Segment,
+  Grid,
+  Header,
+} from 'semantic-ui-react';
 
 
 class Projects extends Component {
@@ -31,16 +35,28 @@ class Projects extends Component {
   render() {
     let { listOfRepos } = this.props;
     return (
-      <Segment>
-        {
-          // if(JSON.stringify(listOfRepos) === JSON.stringify({})) {
-          //   listOfRepos.forEach(repo => <p>{repo}</p>)
-
-          // }
-
-          JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos, repo => <p key={repo.id}>{repo}</p>) : 'yo'
-        }
-      </Segment>
+      <Grid container verticalAlign='middle' centered padded>
+        <Grid.Row className='project title'>
+          <Header className='title repo' as='h3' textAlign='left' floated='left'>PROJECTS</Header>
+        </Grid.Row>
+        <Grid.Row>
+          <Segment>
+            {
+              JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos, repo => <p key={repo.id}>{repo.name}</p>) : null
+            }
+          </Segment>
+        </Grid.Row>
+        <Grid.Row className='project title'>
+          <Header className='title repo' as='h3' textAlign='left' floated='left'>EXERCISES</Header>
+        </Grid.Row>
+        <Grid.Row>
+          <Segment>
+            {
+              JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos, repo => <p key={repo.id}>{repo.name}</p>) : null
+            }
+          </Segment>
+        </Grid.Row>
+      </Grid>
     );
   }
 }

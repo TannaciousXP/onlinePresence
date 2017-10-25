@@ -162,6 +162,21 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
 .ui.modal>.actions {
   background: rgba(0, 0, 0, .85);
 }
+/* Change Projects title */
+.project.title {
+  background: rgba(0, 0, 0, .85);
+  justify-content: left !important;
+  /* align-items: left !important;
+  align-content: left !important; */
+
+}
+
+.title.repo {
+  color: #fff;
+  margin-left: 2.38em;
+  /* margin: 0; */
+
+}
 
 /* Header ---------------------------------------- */
 
