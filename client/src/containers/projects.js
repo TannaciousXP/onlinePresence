@@ -42,7 +42,7 @@ class Projects extends Component {
         <Grid.Row>
           <Segment>
             {
-              JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos, repo => <p key={repo.id}>{repo.name}</p>) : null
+              JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos[0], repo => <p key={repo.id}>{repo.name}</p>) : null
             }
           </Segment>
         </Grid.Row>
@@ -52,7 +52,7 @@ class Projects extends Component {
         <Grid.Row>
           <Segment>
             {
-              JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos, repo => <p key={repo.id}>{repo.name}</p>) : null
+              JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos[1], repo => <p key={repo.id}>{repo.name}</p>) : null
             }
           </Segment>
         </Grid.Row>
