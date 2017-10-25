@@ -175,9 +175,22 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
   color: #fff;
   margin-left: 2.38em;
   /* margin: 0; */
-
+}
+/* Justifie content for ui.cards */
+.ui.cards {
+  justify-content: center;
 }
 
+.ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui) {
+  font-size: 1em;
+}
+.ui.card .meta, .ui.cards>.card .meta {
+  font-size: 0.9em;
+}
+
+.ui.red.tiny.button {
+  vertical-align: bottom;
+}
 /* Header ---------------------------------------- */
 
 .ui.inverted.vertical.segment {

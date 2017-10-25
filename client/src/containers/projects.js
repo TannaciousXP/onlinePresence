@@ -9,7 +9,11 @@ import {
   Segment,
   Grid,
   Header,
+  Card,
+  Button,
 } from 'semantic-ui-react';
+// Import component for exercise
+import ExerciseCardList from '../components/exerciseCardList';
 
 
 class Projects extends Component {
@@ -50,11 +54,18 @@ class Projects extends Component {
           <Header className='title repo' as='h3' textAlign='left' floated='left'>EXERCISES</Header>
         </Grid.Row>
         <Grid.Row>
-          <Segment>
+          <Card.Group stackable textAlign='center' itemsPerRow={5}>
             {
-              JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos[1], repo => <p key={repo.id}>{repo.name}</p>) : null
+              JSON.stringify(listOfRepos) !== JSON.stringify({}) ?
+                _.map(listOfRepos[1], repo => <ExerciseCardList
+                  key={repo.id}
+                  name={repo.name}
+                  meta={repo.description}
+                  link={repo.html_url}
+                />) :
+                null
             }
-          </Segment>
+          </Card.Group>
         </Grid.Row>
       </Grid>
     );

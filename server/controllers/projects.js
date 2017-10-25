@@ -8,12 +8,22 @@ module.exports.fetchRepos = (req, res) => {
   axios.get(`https://api.github.com/users/${req.params.user}/repos`)
     .then(results => {
 
-      let names = ['Omni-Chat', 'Evently', 'Home-Feels'];
+      let names = ['Omni-Chat', 'Evently', 'Home-Feels', 'pxtan'];
       let projects = results.data.filter( repo => {
-        return (repo.name === names[0] || repo.name === names[1] || repo.name === names[2]);
+        return (
+          repo.name === names[0] ||
+          repo.name === names[1] ||
+          repo.name === names[2] ||
+          repo.name === names[3]
+        );
       });
       let exercises = results.data.filter( repo => {
-        return (repo.name !== names[0] && repo.name !== names[1] && repo.name !== names[2]);
+        return (
+          repo.name !== names[0] &&
+          repo.name !== names[1] &&
+          repo.name !== names[2] &&
+          repo.name !== names[3]
+        );
       });
       res.status(200).send([projects, exercises]);
     })
