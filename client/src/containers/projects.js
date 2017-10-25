@@ -2,6 +2,11 @@ import React, {Component} from 'react';
 // Import for redux and actions
 import { connect } from 'react-redux';
 import { isRepoFetched, repoFetched, fetchReposList } from '../actions';
+// Import lodash
+import _ from 'lodash';
+// Import from semantic
+import { Segment } from 'semantic-ui-react';
+
 
 class Projects extends Component {
   constructor(props) {
@@ -13,10 +18,11 @@ class Projects extends Component {
 
   componentWillMount() {
     // preventDefault();
-    let { repoFetched, fetchReposList, isFetched
-    } = this.props;
+    let { repoFetched, fetchReposList, isFetched, listOfRepos } = this.props;
 
     if (JSON.stringify(isFetched) === JSON.stringify({}) || isFetched === false) {
+      // if (JSON.stringify(listOfRepos) === JSON.stringify({})) {
+      // }
       fetchReposList('TannaciousXP');
       repoFetched();
     }
@@ -24,12 +30,17 @@ class Projects extends Component {
 
   render() {
     let { listOfRepos } = this.props;
-    let xRender = 0;
-    console.log(`LIST OF REPOS!!!! : ${JSON.stringify(listOfRepos)}`);
     return (
-      <div>
-        Projects
-      </div>
+      <Segment>
+        {
+          // if(JSON.stringify(listOfRepos) === JSON.stringify({})) {
+          //   listOfRepos.forEach(repo => <p>{repo}</p>)
+
+          // }
+
+          JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos, repo => <p key={repo.id}>{repo}</p>) : 'yo'
+        }
+      </Segment>
     );
   }
 }

@@ -1,7 +1,10 @@
 const axios = require('axios');
 
 module.exports.fetchRepos = (req, res) => {
-
+  var config = {
+    headers: { 'User-Agent': 'request' },
+    json: true
+  };
   axios.get(`https://api.github.com/users/${req.params.user}/repos`)
     .then(results => {
       // console.log(`getting back results: ${results}`);
