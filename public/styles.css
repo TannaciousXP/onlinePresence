@@ -191,6 +191,11 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
 .ui.red.tiny.button {
   vertical-align: bottom;
 }
+
+/* Change colomns in card to have margin of 16 on the bottom */
+.projects {
+  padding-bottom: 1rem;
+}
 /* Header ---------------------------------------- */
 
 .ui.inverted.vertical.segment {
