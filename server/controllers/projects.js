@@ -28,7 +28,7 @@ module.exports.fetchRepos = (req, res) => {
           repo.name !== names[3]
         );
       });
-      res.status(200).send([projects, exercises]);
+      res.status(200).send([projects, exercises, names]);
     })
     .catch(err => {
       console.log(`Inside Error: ${err}`);
