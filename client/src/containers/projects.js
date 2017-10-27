@@ -14,6 +14,7 @@ import {
 } from 'semantic-ui-react';
 // Import component for exercise
 import ExerciseCardList from '../components/cards/exerciseCardList';
+import Omni from '../components/cards/projects_omni';
 
 
 class Projects extends Component {
@@ -43,16 +44,23 @@ class Projects extends Component {
         <Grid.Row className='project title'>
           <Header className='title repo' as='h3' textAlign='left' floated='left'>PROJECTS</Header>
         </Grid.Row>
-        <Grid.Row>
+
+        <Grid.Row columns={2}>
           <Segment>
             {
               JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos[0], repo => <p key={repo.id}>{repo.name}</p>) : null
+
+            }
+            {
+              JSON.stringify(listOfRepos) !== JSON.stringify({}) ? <Omni card={listOfRepos[0][0]}/> : null
             }
           </Segment>
         </Grid.Row>
+
         <Grid.Row className='project title'>
           <Header className='title repo' as='h3' textAlign='left' floated='left'>EXERCISES</Header>
         </Grid.Row>
+
         <Grid.Row>
           <Card.Group stackable textAlign='center' itemsPerRow={5}>
             {
