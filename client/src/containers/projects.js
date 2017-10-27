@@ -13,7 +13,7 @@ import {
   Button,
 } from 'semantic-ui-react';
 // Import component for exercise
-import ExerciseCardList from '../components/exerciseCardList';
+import ExerciseCardList from '../components/cards/exerciseCardList';
 
 
 class Projects extends Component {

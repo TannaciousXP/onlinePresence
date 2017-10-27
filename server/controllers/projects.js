@@ -8,7 +8,7 @@ module.exports.fetchRepos = (req, res) => {
   axios.get(`https://api.github.com/users/${req.params.user}/repos`)
     .then(results => {
 
-      let names = ['Omni-Chat', 'Evently', 'Home-Feels', 'pxtan'];
+      let names = ['Omni-Chat', 'pxtan', 'Evently', 'Home-Feels'];
       let projects = results.data.filter( repo => {
         return (
           repo.name === names[0] ||
@@ -17,6 +17,9 @@ module.exports.fetchRepos = (req, res) => {
           repo.name === names[3]
         );
       });
+      // swap the projects order to be render in order
+      [projects[0], projects[1], projects[2], projects[3]] =
+      [projects[2], projects[3], projects[0], projects[1]];
       let exercises = results.data.filter( repo => {
         return (
           repo.name !== names[0] &&
