@@ -34,8 +34,7 @@ class Projects extends Component {
     let { repoFetched, fetchReposList, isFetched, listOfRepos } = this.props;
 
     if (JSON.stringify(isFetched) === JSON.stringify({}) || isFetched === false) {
-      // if (JSON.stringify(listOfRepos) === JSON.stringify({})) {
-      // }
+
       fetchReposList('TannaciousXP');
       repoFetched();
     }
