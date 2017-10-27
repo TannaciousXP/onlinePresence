@@ -25,7 +25,10 @@ module.exports.fetchRepos = (req, res) => {
           repo.name !== names[0] &&
           repo.name !== names[1] &&
           repo.name !== names[2] &&
-          repo.name !== names[3]
+          repo.name !== names[3] &&
+          repo.name !== 'mvp' &&
+          repo.name !== 'underbar-review' &&
+          repo.name !== 'recursion-review'
         );
       });
       res.status(200).send([projects, exercises, names]);
