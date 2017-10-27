@@ -14,7 +14,11 @@ import {
 } from 'semantic-ui-react';
 // Import component for exercise
 import ExerciseCardList from '../components/cards/exerciseCardList';
+// Import components for projects
 import Omni from '../components/cards/projects_omni';
+import Pxt from '../components/cards/projects_pxtan';
+import Evently from '../components/cards/projects_evently';
+import HomeFeels from '../components/cards/projects_homeFeels';
 
 
 class Projects extends Component {
@@ -45,16 +49,23 @@ class Projects extends Component {
           <Header className='title repo' as='h3' textAlign='left' floated='left'>PROJECTS</Header>
         </Grid.Row>
 
-        <Grid.Row columns={2}>
-          <Segment>
-            {
-              JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos[0], repo => <p key={repo.id}>{repo.name}</p>) : null
+        <Grid.Row columns={3}>
 
-            }
-            {
-              JSON.stringify(listOfRepos) !== JSON.stringify({}) ? <Omni card={listOfRepos[0][0]}/> : null
-            }
-          </Segment>
+          {
+            JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos[0], repo => {
+              if (repo.name === listOfRepos[2][0]) {
+                return <Omni key={repo.id} card={repo}/>;
+              } else if (repo.name === listOfRepos[2][1]) {
+                return <Pxt key={repo.id} card={repo}/>;
+              } else if (repo.name === listOfRepos[2][2]) {
+                return <Evently key={repo.id} card={repo}/>;
+              } else {
+                return <HomeFeels key={repo.id} card={repo}/>;
+              }
+            }) : null
+
+          }
+
         </Grid.Row>
 
         <Grid.Row className='project title'>
