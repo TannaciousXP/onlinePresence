@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Icon, Image, Button, Grid } from 'semantic-ui-react';
 
-const HFCard = ({card}) => (
+const PxtCard = ({card}) => (
   <Grid.Column className='projects'>
     <Card>
       <Image src='/assets/omniChat/omniLogo.png'/>
@@ -13,7 +13,7 @@ const HFCard = ({card}) => (
           {card.description}
         </Card.Meta>
         <Card.Description>
-          Put description for HomeFeels
+          Put description for PXTAN
         </Card.Description>
       </Card.Content>
     </Card>
@@ -24,4 +24,4 @@ const HFCard = ({card}) => (
 );
 
 
-export default HFCard;
+export default PxtCard;
