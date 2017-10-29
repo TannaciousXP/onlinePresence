@@ -20,10 +20,10 @@ const OmniCard = ({card}) => {
           Put description for Omni
           </Card.Description>
         </Card.Content>
+        <Card.Content extra>
+          <Button color='red'>Show Details</Button>
+        </Card.Content>
       </Card>
-      <Card.Content extra>
-        <Button color='red'>Show Details</Button>
-      </Card.Content>
     </Grid.Column>
   );
 };

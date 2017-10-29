@@ -16,10 +16,10 @@ const HFCard = ({card}) => (
           Put description for HomeFeels
         </Card.Description>
       </Card.Content>
+      <Card.Content extra>
+        <Button color='red'>Show Details</Button>
+      </Card.Content>
     </Card>
-    <Card.Content extra>
-      <Button color='red'>Show Details</Button>
-    </Card.Content>
   </Grid.Column>
 );
 
