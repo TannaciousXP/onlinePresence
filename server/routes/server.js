@@ -16,7 +16,7 @@ router.route('/about')
   .get((req, res) => {
     res.render('pages/about.ejs', {
       title: 'About',
-      background: `background-image: url('/assets/photos/about.jpg`,
+      background: `background-image: url('/assets/photos/about2.jpg`,
     });
   });
 
@@ -39,7 +39,7 @@ router.route('/blogs')
   .get((req, res) => {
     res.render('pages/blogs.ejs', {
       title: 'Blogs',
-      background: `background-image: url('/assets/photos/blog.jpg')`,
+      background: `background-image: url('/assets/photos/blog2.jpg')`,
     });
   });
 
