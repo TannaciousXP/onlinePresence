@@ -17,7 +17,7 @@ export default class About extends Component {
           <Segment raised textAlign='left'>
             <Grid columns={2} verticalAlign='middle'>
               <Grid.Column width={5}>
-                <Image size='medium' shape='circular' src='/assets/photos/photoshoot.jpg'/>
+                <Image size='medium' shape='circular' src='/assets/logos/code.png'/>
               </Grid.Column>
 
               <Grid.Column width={11}>
@@ -60,7 +60,17 @@ export default class About extends Component {
                 </Header>
               </Grid.Column>
               <Grid.Column width={5}>
-                <Image size='medium' shape='circular' src='/assets/photos/photoshoot.jpg'/>
+                <Reveal animated='rotate'>
+                  <Reveal.Content visible>
+                    <Image size='medium' shape='circular' src='/assets/logos/shears.png'/>
+
+                  </Reveal.Content>
+                  <Reveal.Content hidden>
+                    <Image size='medium' shape='circular' src='/assets/logos/c&g.png'/>
+
+                  </Reveal.Content>
+                </Reveal>
+
               </Grid.Column>
             </Grid>
           </Segment>
@@ -69,7 +79,16 @@ export default class About extends Component {
           <Segment raised textAlign='left'>
             <Grid columns={2} verticalAlign='middle'>
               <Grid.Column width={5}>
-                <Image size='medium' shape='circular' src='/assets/photos/photoshoot.jpg'/>
+                <Reveal animated='rotate left'>
+                  <Reveal.Content visible>
+                    <Image size='medium' shape='circular' src='/assets/logos/wine.png'/>
+
+                  </Reveal.Content>
+                  <Reveal.Content hidden>
+                    <Image size='medium' shape='circular' src='/assets/logos/velvety.png'/>
+
+                  </Reveal.Content>
+                </Reveal>
               </Grid.Column>
 
               <Grid.Column width={11}>
