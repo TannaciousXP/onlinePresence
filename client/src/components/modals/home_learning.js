@@ -43,7 +43,7 @@ class Learning extends Component {
             /></Button>
           <Modal
             onClose={close}
-            open={ (isModalOpen && modal === renderModal) ? true : false}
+            open={ (isModalOpen && modal === renderModal) ? true : false }
             dimmer='blurring'
           >
             <Modal.Header>Learning</Modal.Header>

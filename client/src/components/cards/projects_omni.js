@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Card, Icon, Image, Button, Grid, Modal } from 'semantic-ui-react';
 
-import { connect } from 'react-redux';
 
-const OmniCard = ({card}) => {
+import OmniModal from '../modals/projectsM_omni';
 
+const OmniCard = ({card, show}) => {
   return (
     <Grid.Column className='projects'>
       <Card>
@@ -21,19 +21,15 @@ const OmniCard = ({card}) => {
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-          <Button color='red'>Show Details</Button>
+          <Button color='red' onClick={() => show('Omni')}>Show Details</Button>
+          <OmniModal/>
         </Card.Content>
       </Card>
     </Grid.Column>
   );
 };
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    isModalOpen: state.isModalOpen,
-    renderModal: state.renderModal,
-  };
-};
 
-export default connect (mapStateToProps)(OmniCard);
+
+export default OmniCard;
 

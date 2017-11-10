@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 // Import for redux and actions
 import { connect } from 'react-redux';
-import { isRepoFetched, repoFetched, fetchReposList } from '../actions';
+import { isRepoFetched, repoFetched, fetchReposList, showModal, viewModal } from '../actions';
 // Import lodash
 import _ from 'lodash';
 // Import from semantic
@@ -14,6 +14,7 @@ import {
 } from 'semantic-ui-react';
 // Import component for exercise
 import ExerciseCardList from '../components/cards/exerciseCardList';
+// Import actions;
 // Import components for projects
 import Omni from '../components/cards/projects_omni';
 import Pxt from '../components/cards/projects_pxtan';
@@ -27,6 +28,12 @@ class Projects extends Component {
     this.state = {
       coolBeans: true,
     };
+    this.show = this.show.bind(this);
+  }
+
+  show(str) {
+    this.props.viewModal(str);
+    this.props.showModal();
   }
 
   componentWillMount() {
@@ -53,7 +60,7 @@ class Projects extends Component {
           {
             JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos[0], repo => {
               if (repo.name === listOfRepos[2][0]) {
-                return <Omni key={repo.id} card={repo}/>;
+                return <Omni key={repo.id} card={repo} show={this.show}/>;
               } else if (repo.name === listOfRepos[2][1]) {
                 return <Pxt key={repo.id} card={repo}/>;
               } else if (repo.name === listOfRepos[2][2]) {
@@ -72,7 +79,7 @@ class Projects extends Component {
         </Grid.Row>
 
         <Grid.Row>
-          <Card.Group stackable textAlign='center' itemsPerRow={5}>
+          <Card.Group stackable textAlign='center' >
             {
               JSON.stringify(listOfRepos) !== JSON.stringify({}) ?
                 _.map(listOfRepos[1], repo => <ExerciseCardList
@@ -102,5 +109,6 @@ export default connect (mapStateToProps, {
   isRepoFetched,
   repoFetched,
   fetchReposList,
-  // fetchName
+  showModal,
+  viewModal
 })(Projects);

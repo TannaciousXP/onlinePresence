@@ -6,11 +6,12 @@ import {
 
 
 const ExerciseCardList = ({name, meta, link}) => (
-  <Card raised color='grey'>
+  <Card raised color='grey' className='card'>
     <Card.Content
       header={name.toUpperCase()}
       meta={meta}
-      description={<Button size='tiny' color='red' href={link}>View Repo</Button>}
+      description={<Button size='mini' color='red' href={link}>See Repo</Button>}
+      className='cardsDisplay'
     />
   </Card>
 );

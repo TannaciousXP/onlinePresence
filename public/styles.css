@@ -215,6 +215,22 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
 	padding-bottom: 0.3125em !important;
 }
 
+/* cardsDisplay ---------------------------------------- */
+
+.card {
+  align-items: center;
+}
+
+.cardsDisplay {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardsDisplay a.ui.red.mini.ui.button {
+  margin: 3px;
+  align-self: center;
+}
+
 /* Preloader ---------------------------------------- */
 
 #preloader {
