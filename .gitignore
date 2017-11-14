@@ -3,6 +3,8 @@
 # Logs
 logs
 *.log
+nohup.out
+
 
 # Compiled Dirs (http://nodejs.org/api/addons.html)
 build/
