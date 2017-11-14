@@ -17,13 +17,22 @@ export default class About extends Component {
           <Segment raised textAlign='left'>
             <Grid columns={2} verticalAlign='middle'>
               <Grid.Column width={5}>
-                <Image size='medium' shape='circular' src='/assets/logos/code.png'/>
+                <Reveal animated='rotate left'>
+                  <Reveal.Content visible>
+                    <Image size='medium' shape='circular' src='/assets/logos/code.png'/>
+
+                  </Reveal.Content>
+                  <Reveal.Content hidden>
+                    <Image size='medium' shape='circular' src='/assets/logos/areYou.png'/>
+
+                  </Reveal.Content>
+                </Reveal>
               </Grid.Column>
 
               <Grid.Column width={11}>
                 <Header className='head intro' as='h1'>SOFTWARE ENGINEER</Header>
                 <Divider fitted/>
-                <Header className='intro content' size='small' textAlign='justified'>
+                <Header className='' size='small' textAlign='justified'>
             I am a Javascript engineer with experience across the stack and a strong
             command of relevant technologies. Recently, I built a communication platform
             for hobbyists with the major features such as real-time messaging through
@@ -40,7 +49,7 @@ export default class About extends Component {
           </Segment>
         </Grid.Row>
         <Grid.Row>
-          <Segment raised textAlign='left'>
+          <Segment raised textAlign='right'>
             <Grid columns={2} verticalAlign='middle'>
 
               <Grid.Column width={11}>

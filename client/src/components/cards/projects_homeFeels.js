@@ -17,7 +17,7 @@ const HFCard = ({card}) => (
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <Button color='red'>Show Details</Button>
+        <Button disabled color='red'>Show Details</Button>
       </Card.Content>
     </Card>
   </Grid.Column>

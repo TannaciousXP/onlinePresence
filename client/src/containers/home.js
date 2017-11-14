@@ -73,11 +73,11 @@ class Home extends Component {
           </Grid.Column>
           {/* Import Fitness componenet */}
           <Grid.Column>
-            <Fitness show={this.show} close={this.close}/>
+            <Meditate show={this.show} close={this.close}/>
           </Grid.Column>
           {/* Import Meditate componenet */}
           <Grid.Column>
-            <Meditate show={this.show} close={this.close}/>
+            <Fitness show={this.show} close={this.close}/>
           </Grid.Column>
           {/* Import Pets componenet */}
           <Grid.Column>
