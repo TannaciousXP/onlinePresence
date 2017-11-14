@@ -49,7 +49,7 @@ class Home extends Component {
               <Grid.Column width={11}>
                 <Header className='head intro' as='h1'>PERSONAL NARRATIVE</Header>
                 <Divider fitted/>
-                <Header className='intro content' size='small' textAlign='justified'>
+                <Header className='intro content' size='small' textAlign='left'>
                 I am a Javascript engineer with experience across the stack and a strong
                 command of relevant technologies. Recently, I built a communication platform
                 for hobbyists with the major features such as real-time messaging through
