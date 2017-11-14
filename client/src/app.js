@@ -8,7 +8,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import promise from 'redux-promise';
 import reducers from './reducers';
 
-import Router from './components/Router';
+import Router from './components/router';
 
 const enhancers = compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f
@@ -24,4 +24,4 @@ const App = () => (
   </Provider>
 );
 
-render(<App />, document.getElementById('app')); 
+render(<App />, document.getElementById('app'));
