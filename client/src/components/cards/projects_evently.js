@@ -13,7 +13,6 @@ const EventlyCard = ({card}) => (
           {card.description}
         </Card.Meta>
         <Card.Description>
-          Put description for Evently
         </Card.Description>
       </Card.Content>
       <Card.Content extra>

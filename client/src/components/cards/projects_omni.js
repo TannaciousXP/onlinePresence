@@ -17,7 +17,6 @@ const OmniCard = ({card, show}) => {
             {card.description}
           </Card.Meta>
           <Card.Description>
-          Put description for Omni
           </Card.Description>
         </Card.Content>
         <Card.Content extra>

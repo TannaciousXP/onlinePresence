@@ -60,6 +60,9 @@ class Home extends Component {
                 facilitate seamless alterations to the database schema. As for the front-end, I
                 modularized the components with React for a smooth and intuitive user interface
                 and managed the state with Redux for e cient data  ow and improved maintainability.
+
+
+                Check out the artifacts
                 </Header>
               </Grid.Column>
             </Grid>

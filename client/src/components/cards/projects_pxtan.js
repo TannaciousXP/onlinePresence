@@ -13,7 +13,6 @@ const PxtCard = ({card}) => (
           {card.description}
         </Card.Meta>
         <Card.Description>
-          Put description for PXTAN
         </Card.Description>
       </Card.Content>
       <Card.Content extra>

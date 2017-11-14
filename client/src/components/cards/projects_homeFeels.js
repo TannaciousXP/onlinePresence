@@ -13,7 +13,6 @@ const HFCard = ({card}) => (
           {card.description}
         </Card.Meta>
         <Card.Description>
-          Put description for HomeFeels
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
