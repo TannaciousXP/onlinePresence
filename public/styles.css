@@ -127,7 +127,7 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 /* Change the opacticy of the raised segment */
 .ui.raised.segment {
-  background:rgba(255, 255, 255, 0.5);
+  background:rgba(66, 66, 66, 0.5);
 }
 /* Change the ui.cell.grid border color and margin*/
 .head.intro {
@@ -136,7 +136,7 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 /* Change the intro to have white font color */
 .intro.content {
-  color: #fff;
+  color: rgb(238, 238, 238);
 }
 /* Change reveal content Image height to 150px */
 .ui.move.reveal .ui.small.image {
@@ -150,7 +150,7 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
 /* Change blogs font to white and 5rem */
 .ui.header.blog {
   font-size: 4rem;
-  color: #fff;
+  color: rgb(238, 238, 238);
   margin: 0%;
   font-family: 'Helvetica Neue';
 }
