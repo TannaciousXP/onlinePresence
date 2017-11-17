@@ -43,6 +43,7 @@ class Learning extends Component {
               src='/assets/photos/books.jpg'
             /></Button>
           <Modal
+
             onClose={close}
             open={ (isModalOpen && modal === renderModal) ? true : false }
             dimmer='blurring'
@@ -51,9 +52,8 @@ class Learning extends Component {
             <Modal.Content image>
               <Image
                 wrapped
-                size='medium'
+                size='massive'
                 src='/assets/photos/books.jpg'
-                dimmer='blurring'
               />
               <Modal.Description>
                 “Ever since I was a child, I had this instinctive urge for expansion and growth. To me, the

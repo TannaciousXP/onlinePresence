@@ -51,9 +51,8 @@ class Fitness extends Component {
             <Modal.Content image>
               <Image
                 wrapped
-                size='medium'
+                size='massive'
                 src='/assets/photos/fitness.jpg'
-                dimmer='blurring'
               />
               <Modal.Description>
                 There are plenty of <a className='subLinks'

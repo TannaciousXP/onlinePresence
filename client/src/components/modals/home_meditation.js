@@ -51,11 +51,10 @@ class Meditate extends Component {
             <Modal.Content image>
               <Image
                 wrapped
-                size='medium'
+                size='massive'
                 src='/assets/photos/meditate.jpg'
               />
               <Modal.Description>
-
                 With all the <a className='subLinks' href='https://liveanddare.com/benefits-of-meditation/ '>
                   <strong>studies about meditation</strong> </a>it seems like an easy habit to pick up because all
                 you do is sit in an upright position and close your eyes. However, meditation was the hardest habit

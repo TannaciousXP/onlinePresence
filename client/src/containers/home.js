@@ -58,16 +58,22 @@ class Home extends Component {
                   an extrovert by nature, so I enjoy meeting people and networking. I enjoy working with other
                   people because I know the heights a well-organized, transparent, and harmonious team can reach.
                   I would love nothing more than to share a common goal and reach it together.
-                  <Divider hidden />
-                  If you have a bit more time and would like to know more about me, hover over the icons and
-                  click on the hidden pictures to check out my
-                  <a className='subLinks' href='https://www.youtube.com/watch?v=7DSscQlSZR4'> <strong>three keystone habits</strong> </a>
-                  and why having pets could help you through the day.
-                  <Divider hidden />
-                  If you’re here to assess if I’m a high yield / low risk hire, I value your time, here's a
-                  quick look at my programming<a className='subLinks'> <strong>artifacts</strong></a>.
-                  <Divider hidden />
                 </p>
+                <Divider hidden/>
+                <p className='text'>
+                If you have a bit more time and would like to know more about me, hover over the icons and
+                click on the hidden pictures to check out my and why having pets could help you through the day.
+                  <a className='subLinks' href='https://www.youtube.com/watch?v=7DSscQlSZR4'> <strong>three keystone habits</strong> </a>
+
+                </p>
+                <Divider hidden/>
+                <p className='text'>
+
+                If you’re here to assess if I’m a high yield / low risk hire, I value your time, here's a
+                quick look at my programming<a className='subLinks'> <strong>artifacts</strong></a>.
+
+                </p>
+
               </Grid.Column>
             </Grid>
           </Segment>

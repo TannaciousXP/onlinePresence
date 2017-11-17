@@ -50,9 +50,9 @@ class Pets extends Component {
             <Modal.Content image>
               <Image
                 wrapped
-                size='medium'
+                size='massive'
                 src='/assets/photos/pets.jpg'
-                dimmer='blurring'
+
               />
               <Modal.Description>
               "Pets are humanizing. They remind us we have an obligation and
