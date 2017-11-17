@@ -51,7 +51,7 @@ class Meditate extends Component {
             <Modal.Content image>
               <Image
                 wrapped
-                size='massive'
+
                 src='/assets/photos/meditate.jpg'
               />
               <Modal.Description>

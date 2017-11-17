@@ -32,18 +32,31 @@ export default class About extends Component {
               <Grid.Column width={11}>
                 <Header className='head intro' as='h1'>SOFTWARE ENGINEER</Header>
                 <Divider fitted/>
-                <Header className='intro content' size='small' textAlign='justified'>
-            I am a Javascript engineer with experience across the stack and a strong
-            command of relevant technologies. Recently, I built a communication platform
-            for hobbyists with the major features such as real-time messaging through
-            Socket.IO, web-conferences with WebRTC, group events utilizing Google Maps
-            API and OpenWeatherMap API to enhance the visualization of the event’s detail.
-            The back-end was constructed with PostgreSQL for the aggregation of polymorphic
-            data, and I utilized Knex together with Bookshelf to simplify SQL queries and
-            facilitate seamless alterations to the database schema. As for the front-end, I
-            modularized the components with React for a smooth and intuitive user interface
-            and managed the state with Redux for e cient data  ow and improved maintainability.
-                </Header>
+                <br/>
+                <p className='text'>I made the transition to become a Software Engineer
+                partly due to a visa issue because I had no credentials in barbering since
+                it was a self taught skill. The other reason is that since I was a child
+                I enjoyed watching my older brother assemble a computer from the parts he brought
+                from newegg, which spark my curiosity for computer science. Since then,
+                I dabble with Xcode and Python to get a feel for programming. It wasn’t
+                until I immersive myself with JavaScript that I really enjoyed programming.
+                Once I leveled up enough to build a full stack application, I realized
+                my passion for making a positive impact aligned perfectly with programing.</p>
+                <Divider hidden/>
+                <p className='text'>I am currently looking for a full-time position
+                where I can be happy, fully engaged, and passionate about the role I'm
+                in and contribute to the shared goal.</p>
+                <Divider hidden/>
+                <p className='text'>I'm looking for a company whose culture is transparent,
+                harmonious, and well-organized; a company that invests in their employees
+                and that fosters professional and personal growth. This is the kind of
+                company that I would love to contribute to, where I can utilize the
+                transferrable skills I have acquired over the years, such as creative
+                problem-solving, communication, organization, leadership and autonomy. </p>
+                <Divider hidden/>
+                <p className='text'>
+                  <strong className='subLinks'>Hover over the icon</strong> for a surprise =] <br/>
+                Is your company that type of company?</p>
               </Grid.Column>
             </Grid>
           </Segment>
@@ -55,18 +68,52 @@ export default class About extends Component {
               <Grid.Column width={11}>
                 <Header className='head intro' as='h1'>CUTS & GLORY CO</Header>
                 <Divider fitted/>
-                <Header className='intro content' size='small' textAlign='justified'>
-            I am a Javascript engineer with experience across the stack and a strong
-            command of relevant technologies. Recently, I built a communication platform
-            for hobbyists with the major features such as real-time messaging through
-            Socket.IO, web-conferences with WebRTC, group events utilizing Google Maps
-            API and OpenWeatherMap API to enhance the visualization of the event’s detail.
-            The back-end was constructed with PostgreSQL for the aggregation of polymorphic
-            data, and I utilized Knex together with Bookshelf to simplify SQL queries and
-            facilitate seamless alterations to the database schema. As for the front-end, I
-            modularized the components with React for a smooth and intuitive user interface
-            and managed the state with Redux for e cient data  ow and improved maintainability.
-                </Header>
+                <br/>
+                <p className='text'>After my run with Velvety, I started up another
+                company, Cuts & Glory Co., because there was a huge demand from the expat
+                community to get a fresh haircut. I applied what I learned from Velvety
+                and the techniques launched Cuts & Glory Co to the forefront with the
+                other establish Barbershops. I further refined my skills and developed
+                new ones.</p>
+                <Divider hidden/>
+                <p className='text'>
+                  <strong>Self-motivation: <br/></strong>
+                Starting Cuts & Glory Co. was a difficult time for me because I didn’t
+                have my pillars of support (my business partners) anymore, and I had to
+                dig deep because I was the foundation that Cuts & Glory Co. would be built
+                upon. After some soul searching and deep reflection, I came up with my “why”
+                which became the driving force for Cuts & Glory Co.’s success.
+                </p>
+                <Divider hidden/>
+                <p className='text'>
+                  <strong>Communication: <br/></strong>
+                For Cuts & Glory Co., communication was the key to customer retention. In
+                order for me to give the customer the best experience, I needed to know
+                what the customer wanted, then explicitly let the customer know my intentions.
+                If my intentions aligned with the customer's needs, the customer would give
+                me the green light and then receive a fresh cut.
+                </p>
+                <Divider hidden/>
+                <p className='text'>
+                  <strong>Leadership: <br/></strong>
+                  With my increasing brand recognition in the industry, I was invited by
+                  Toni & Guy to become Hong Kong’s first barber instructor. I devised a
+                  course consisting of three parts, and trained over 100 stylists.
+                </p>
+                <Divider hidden/>
+                <p className='text'>
+                  <strong className='subLinks'>Hover over the icon </strong> to see my design for Cuts & Glory Co.<br/>
+                </p>
+                <Divider hidden/>
+                <p className='text'>
+                  <strong>Online Presence: <br/></strong>
+                  <li><a className='subLinks' href='http://www.lifestyleasia.com/453428/the-cut-hong-kongs-most-dapper-barbers/#2'><strong>Most dapper barbers</strong></a></li>
+                  <li><a className='subLinks' href='http://www.lanecrawford.com/discover/the-new-modern-grooming-checklist-64200009-20160831/shop/'><strong>Lanecrawford Modern grooming</strong></a></li>
+                  <li><a className='subLinks' href='https://coconuts.co/hongkong/lifestyle/watch-hong-kong-barber-mad-skills-turn-hair-art-video/'><strong>Versace design</strong></a></li>
+                  <li><a className='subLinks' href='https://www.youtube.com/watch?v=jwRQ-hhEfm4&t=14s'><strong>Menclub style video</strong></a></li>
+                  <li><a className='subLinks' href='https://www.elle.com.hk/life/lifestyle/braun-share-the-shave-teaser#QRAvqhlq74ZHYdd7.97'><strong>Elle magazine</strong></a></li>
+
+                </p>
               </Grid.Column>
               <Grid.Column width={5}>
                 <Reveal animated='rotate'>
@@ -103,18 +150,65 @@ export default class About extends Component {
               <Grid.Column width={11}>
                 <Header className='head intro' as='h1'>VELVETY & BLACK BEAR</Header>
                 <Divider fitted/>
-                <Header className='intro content' size='small' textAlign='justified'>
-            I am a Javascript engineer with experience across the stack and a strong
-            command of relevant technologies. Recently, I built a communication platform
-            for hobbyists with the major features such as real-time messaging through
-            Socket.IO, web-conferences with WebRTC, group events utilizing Google Maps
-            API and OpenWeatherMap API to enhance the visualization of the event’s detail.
-            The back-end was constructed with PostgreSQL for the aggregation of polymorphic
-            data, and I utilized Knex together with Bookshelf to simplify SQL queries and
-            facilitate seamless alterations to the database schema. As for the front-end, I
-            modularized the components with React for a smooth and intuitive user interface
-            and managed the state with Redux for e cient data  ow and improved maintainability.
-                </Header>
+                <br/>
+                <p className='text'>
+                Velvety came to be because of the urge to move back to Hong Kong after
+                my year abroad there, and my term projects about exporting red wine to
+                Asia for my degree in International Business. We started with just
+                providing the market with our own personal brand of wines, Velvety.
+                The company grew to include logistical services, personal branding of
+                wines, distribution of boutique brands of wine and spirits, marketing
+                services and events planning with the usage of our wines. After
+                experiencing the growth of the business, here are some skills I picked
+                up along the way.
+                </p>
+                <Divider hidden/>
+                <p className='text'>
+                  <strong>Being Autonomous: <br/></strong>
+                  Starting a business in a different country seemed pretty wild for
+                  my friends and family. They all pointed out all the possibilities
+                  of the company going under and everyone had valid points. However,
+                  Stephen Covey’s first habit “Being proactive” was the determining
+                  factor of my performance. For example, if I needed to make sales,
+                  I would go knocking on doors, send out cold emails, make cold
+                  calls, and follow up. Therefore, if I needed or wanted something,
+                  I made small measurable goals, and proceeded to pursue them.
+                </p>
+                <Divider hidden/>
+                <p className='text'>
+                  <strong>Organization: <br/></strong>
+                  With the role as co-founder, I needed to set up meetings and deliveries,
+                  create marketing material, host events, make sales, devise business
+                  plans and execute them. At first this was extremely difficult to
+                   balance, but after reading "The 7 Habits of Highly Effective People”
+                   by Stephen Covey, it became easier to manage by applying the key
+                   habits of “Begin with the end in mind”, “Put first things first”,
+                   “Seek first to understand”, and “Think win-win”.
+                </p>
+                <Divider hidden/>
+                <p className='text'>
+                  <strong>Problem-Solving: <br/></strong>
+                  Problem solving is a skill like any other, and the more you practice
+                  it, the better you’ll get. With the variety of the problems I
+                  encounter, I began to notice a pattern and came up with a system of
+                  M4 (Macro, Micro, Micro, Macro). M4 starts with the first macro,
+                  where I would understand the problem at a high level overview.
+                  The first micro is the process of breaking down the problem into
+                  smaller problems and then solving them. The second micro is taking
+                  the small solutions and refactoring/optimizing them. By the time I
+                  get to the second macro, I would have the solution.
+                </p>
+                <Divider hidden/>
+                <p className='text'>
+                  <strong className='subLinks'>Hover over the icon </strong> to see my design for Velvety.<br/>
+                Checkout my <a className='subLinks'><strong> flashback</strong></a> Velvety.
+                </p>
+                <Divider hidden/>
+                <p className='text'>
+                  <strong>Online Presence:<br/></strong>
+                  <li><a className='subLinks' href='http://winetimeshk.com/food/velvety-2011-cabernet-sauvignon%E3%80%8C%E5%A4%A7%E7%94%B7%E4%BA%BA%E3%80%8D%E8%83%8C%E5%BE%8C%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/'>
+                    <strong>Hong Kong's biggest blog: WinetimesHK</strong></a></li>
+                </p>
               </Grid.Column>
             </Grid>
           </Segment>

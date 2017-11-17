@@ -51,7 +51,7 @@ class Fitness extends Component {
             <Modal.Content image>
               <Image
                 wrapped
-                size='massive'
+                
                 src='/assets/photos/fitness.jpg'
               />
               <Modal.Description>
