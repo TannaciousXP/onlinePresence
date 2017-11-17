@@ -4,6 +4,7 @@ import {
   Image,
   Button,
   Modal,
+  Divider,
   Header
 } from 'semantic-ui-react';
 
@@ -54,9 +55,26 @@ class Pets extends Component {
                 dimmer='blurring'
               />
               <Modal.Description>
-                <Header>My Pets</Header>
-                <p>YOYO</p>
-                <p>YOYO</p>
+              "Pets are humanizing. They remind us we have an obligation and
+              responsibility to preserve and nurture and care for all life." -
+                <strong>James Cromwell</strong>
+                <Divider hidden/>
+                "Until one has loved an animal, a part of one’s soul remains unawakened" -
+                <strong>Anatole France</strong>
+                <Divider hidden/>
+                It’s funny to think that not only are you taking care of your pets, but
+                your pets are also taking care of you. Pets sense emotions and alleviate
+                stress, help you socialize, and remind you of your responsibilities.
+                <Divider hidden/>
+                My pit bull, Daisy, keeps me on track with my cardio and she is my best
+                running buddy in the morning. Daisy is always down to go for walks;
+                these short walks help me clear my mind if there is any clutter that’s
+                causing a mental block.
+                <Divider hidden/>
+                The next bit is weird if you don’t own a cat, but when my British
+                Shorthair, Mowgli, comes over to play, the feeling of being chosen
+                by him is quite uplifting regardless of the mood I’m in. He does play a
+                role in keeping my emotions balanced and mitigate any stress.
               </Modal.Description>
             </Modal.Content>
             <Modal.Actions>
