@@ -62,8 +62,9 @@ class Home extends Component {
                 <Divider hidden/>
                 <p className='text'>
                 If you have a bit more time and would like to know more about me, hover over the icons and
-                click on the hidden pictures to check out my and why having pets could help you through the day.
-                  <a className='subLinks' href='https://www.youtube.com/watch?v=7DSscQlSZR4'> <strong>three keystone habits</strong> </a>
+                click on the hidden pictures to check out my <a className='subLinks' href='https://www.youtube.com/watch?v=7DSscQlSZR4'> <strong>three keystone habits</strong> </a>
+                and why having pets could help you through the day.
+
 
                 </p>
                 <Divider hidden/>

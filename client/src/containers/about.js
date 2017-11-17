@@ -33,14 +33,13 @@ export default class About extends Component {
                 <Header className='head intro' as='h1'>SOFTWARE ENGINEER</Header>
                 <Divider fitted/>
                 <br/>
-                <p className='text'>I made the transition to become a Software Engineer
-                partly due to a visa issue because I had no credentials in barbering since
-                it was a self taught skill. The other reason is that since I was a child
+                <p className='text'>I became a Software Engineer because since I was a child
                 I enjoyed watching my older brother assemble a computer from the parts he brought
                 from newegg, which spark my curiosity for computer science. Since then,
                 I dabble with Xcode and Python to get a feel for programming. It wasn’t
-                until I immersive myself with JavaScript that I really enjoyed programming.
-                Once I leveled up enough to build a full stack application, I realized
+                until I immersed myself with JavaScript that I really enjoyed programming.
+                Once I leveled up enough to build a full stack application, and built Evently to
+                solve a novel problem that persisted in Hong Kong for hosting events. I realized
                 my passion for making a positive impact aligned perfectly with programing.</p>
                 <Divider hidden/>
                 <p className='text'>I am currently looking for a full-time position
@@ -69,8 +68,8 @@ export default class About extends Component {
                 <Header className='head intro' as='h1'>CUTS & GLORY CO</Header>
                 <Divider fitted/>
                 <br/>
-                <p className='text'>After my run with Velvety, I started up another
-                company, Cuts & Glory Co., because there was a huge demand from the expat
+                <p className='text'>I started my second company,
+                Cuts & Glory Co., because there was a huge demand from the expat
                 community to get a fresh haircut. I applied what I learned from Velvety
                 and the techniques launched Cuts & Glory Co to the forefront with the
                 other establish Barbershops. I further refined my skills and developed
@@ -201,13 +200,13 @@ export default class About extends Component {
                 <Divider hidden/>
                 <p className='text'>
                   <strong className='subLinks'>Hover over the icon </strong> to see my design for Velvety.<br/>
-                Checkout my <a className='subLinks'><strong> flashback</strong></a> Velvety.
+                Checkout my <a className='subLinks'><strong> flashback</strong></a> for Velvety.
                 </p>
                 <Divider hidden/>
                 <p className='text'>
                   <strong>Online Presence:<br/></strong>
-                  <li><a className='subLinks' href='http://winetimeshk.com/food/velvety-2011-cabernet-sauvignon%E3%80%8C%E5%A4%A7%E7%94%B7%E4%BA%BA%E3%80%8D%E8%83%8C%E5%BE%8C%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/'>
-                    <strong>Hong Kong's biggest blog: WinetimesHK</strong></a></li>
+                  <li>Hong Kong's biggest wine blog: <a className='subLinks' href='http://winetimeshk.com/food/velvety-2011-cabernet-sauvignon%E3%80%8C%E5%A4%A7%E7%94%B7%E4%BA%BA%E3%80%8D%E8%83%8C%E5%BE%8C%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/'>
+                    <strong> WinetimesHK</strong></a></li>
                 </p>
               </Grid.Column>
             </Grid>

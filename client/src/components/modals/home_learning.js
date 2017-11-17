@@ -71,7 +71,7 @@ class Learning extends Component {
                 <li>NLP: The New Technology of Achievement - Steve Andreas</li>
                 <li>Thinking, Fast and Slow - Daniel Kahneman</li>
                 <li>The 7 Habits of Highly Effective People - Stephen Covey</li>
-                <li>What Ever BODY is Saying - Joe Navarro</li>
+                <li>What Every BODY is Saying - Joe Navarro</li>
                 <li>How to Win Friends and Influence People - Dale Carnegie</li>
 
                 <Divider hidden/>

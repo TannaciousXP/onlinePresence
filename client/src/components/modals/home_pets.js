@@ -73,7 +73,7 @@ class Pets extends Component {
                 <Divider hidden/>
                 The next bit is weird if you don’t own a cat, but when my British
                 Shorthair, Mowgli, comes over to play, the feeling of being chosen
-                by him is quite uplifting regardless of the mood I’m in. He does play a
+                by him is uplifting regardless of the mood I’m in. He does play a
                 role in keeping my emotions balanced and mitigate any stress.
               </Modal.Description>
             </Modal.Content>
