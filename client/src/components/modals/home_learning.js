@@ -75,9 +75,19 @@ class Learning extends Component {
                 <li>How to Win Friends and Influence People - Dale Carnegie</li>
 
                 <Divider hidden/>
-                  But sometimes you just want to watch an entertaining person on YouTube to learn instead!
-
-
+                But sometimes you just want to watch an entertaining person on YouTube to learn instead!
+                <Divider hidden/>
+                <ul><strong>Programming:</strong></ul>
+                <li><a className='subLinks' href='https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q'>Fun Fun Function</a></li>
+                <li><a className='subLinks' href='https://www.youtube.com/channel/UCyIe-61Y8C4_o-zZCtO4ETQ'>DevTips</a></li>
+                <Divider hidden/>
+                <ul><strong>Personal:</strong></ul>
+                <li><a className='subLinks' href='https://www.youtube.com/channel/UCU_W0oE_ock8bWKjALiGs8Q'>Charisma on Command</a></li>
+                <li><a className='subLinks' href='https://www.youtube.com/channel/UCBIt1VN5j37PVM8LLSuTTlw'>Improvement Pill</a></li>
+                <Divider hidden/>
+                <ul><strong>Science:</strong></ul>
+                <li><a className='subLinks' href='https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA'>Smarter Every Day</a></li>
+                <li><a className='subLinks' href='https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA'>Vsauce</a></li>
 
               </Modal.Description>
             </Modal.Content>
