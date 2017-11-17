@@ -52,10 +52,10 @@ class Projects extends Component {
     return (
       <Grid container verticalAlign='middle' centered padded>
         <Grid.Row className='project title'>
-          <Header className='title repo' as='h3' textAlign='left' floated='left'>PROJECTS</Header>
+          <Header className='title repo' as='h3' textAlign='left' floated='left'>FULL-STACK PROJECTS:</Header>
         </Grid.Row>
 
-        <Grid.Row columns={3}>
+        <Grid.Row columns={4}>
 
           {
             JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos[0], repo => {
@@ -75,7 +75,7 @@ class Projects extends Component {
         </Grid.Row>
 
         <Grid.Row className='project title'>
-          <Header className='title repo' as='h3' textAlign='left' floated='left'>EXERCISES</Header>
+          <Header className='title repo' as='h3' textAlign='left' floated='left'>PROJECTS COMPONENT:</Header>
         </Grid.Row>
 
         <Grid.Row>

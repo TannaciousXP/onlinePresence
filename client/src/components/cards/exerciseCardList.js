@@ -8,8 +8,8 @@ import {
 const ExerciseCardList = ({name, meta, link}) => (
   <Card raised color='grey' className='card'>
     <Card.Content
-      header={name.toUpperCase()}
-      meta={meta}
+      header={meta}
+      meta={name.toUpperCase()}
       description={<Button size='mini' color='red' href={link}>See Repo</Button>}
       className='cardsDisplay'
     />

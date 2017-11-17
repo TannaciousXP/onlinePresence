@@ -4,7 +4,7 @@ import { Card, Icon, Image, Button, Grid } from 'semantic-ui-react';
 const EventlyCard = ({card}) => (
   <Grid.Column className='projects'>
     <Card>
-      <Image src='/assets/omniChat/omniLogo.png'/>
+      <Image src='/assets/evently/evently.jpg'/>
       <Card.Content>
         <Card.Header>
           {card.name.toUpperCase()}

@@ -4,7 +4,7 @@ import { Card, Icon, Image, Button, Grid } from 'semantic-ui-react';
 const HFCard = ({card}) => (
   <Grid.Column className='projects'>
     <Card>
-      <Image src='/assets/omniChat/omniLogo.png'/>
+      <Image src='/assets/homeFeels/homeFeels.jpg'/>
       <Card.Content>
         <Card.Header>
           {card.name.toUpperCase()}
