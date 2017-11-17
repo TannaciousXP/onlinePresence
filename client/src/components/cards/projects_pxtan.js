@@ -4,7 +4,7 @@ import { Card, Icon, Image, Button, Grid } from 'semantic-ui-react';
 const PxtCard = ({card}) => (
   <Grid.Column className='projects'>
     <Card>
-      <Image src='/assets/omniChat/omniLogo.png'/>
+      <Image src='/assets/logos/pxt.png'/>
       <Card.Content>
         <Card.Header>
           {card.name.toUpperCase()}
@@ -16,7 +16,7 @@ const PxtCard = ({card}) => (
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <Button color='red'>Show Details</Button>
+        <Button color='red' disabled>Show Details</Button>
       </Card.Content>
     </Card>
   </Grid.Column>
