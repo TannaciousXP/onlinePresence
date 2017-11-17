@@ -39,7 +39,7 @@ class Meditate extends Component {
               shape='circular'
               size='small'
               centered
-              src='/assets/photos/photoshoot.jpg'
+              src='/assets/photos/meditate.jpg'
             /></Button>
           <Modal
             onClose={close}
@@ -51,7 +51,7 @@ class Meditate extends Component {
               <Image
                 wrapped
                 size='medium'
-                src='/assets/photos/photoshoot.jpg'
+                src='/assets/photos/meditate.jpg'
                 dimmer='blurring'
               />
               <Modal.Description>

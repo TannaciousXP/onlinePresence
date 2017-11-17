@@ -39,7 +39,7 @@ class Learning extends Component {
               shape='circular'
               size='small'
               centered
-              src='/assets/photos/photoshoot.jpg'
+              src='/assets/photos/books.jpg'
             /></Button>
           <Modal
             onClose={close}
@@ -51,7 +51,7 @@ class Learning extends Component {
               <Image
                 wrapped
                 size='medium'
-                src='/assets/photos/photoshoot.jpg'
+                src='/assets/photos/books.jpg'
                 dimmer='blurring'
               />
               <Modal.Description>
