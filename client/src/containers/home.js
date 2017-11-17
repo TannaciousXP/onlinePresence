@@ -43,14 +43,14 @@ class Home extends Component {
           <Segment raised textAlign='left'>
             <Grid columns={2} verticalAlign='middle'>
               <Grid.Column width={5}>
-                <Image size='medium' shape='circular' src='/assets/photos/photoshoot.jpg'/>
+                <Image size='medium' shape='circular' src='/assets/photos/ps1.jpg'/>
               </Grid.Column>
 
               <Grid.Column width={11}>
                 <Header className='head intro' as='h1'>Welcome and thank you for visiting my page</Header>
                 <Divider fitted/>
                 <Divider hidden />
-                <Header className='intro content' size='small' floated='left' textAlign='justified'>
+                <p className='text'>
                   I am a Full-Stack JavaScript Engineer with experience across the stack and a strong command
                   of relevant technologies. I have a passion for making a positive impact around me by utilizing
                   my creative problem-solving abilities. As an autodidact, I love to learn. I'm keen on being
@@ -61,13 +61,13 @@ class Home extends Component {
                   <Divider hidden />
                   If you have a bit more time and would like to know more about me, hover over the icons and
                   click on the hidden pictures to check out my
-                  <a className='subLinks' href='https://www.youtube.com/watch?v=7DSscQlSZR4'> three keystone habits </a>
+                  <a className='subLinks' href='https://www.youtube.com/watch?v=7DSscQlSZR4'> <strong>three keystone habits</strong> </a>
                   and why having pets could help you through the day.
                   <Divider hidden />
                   If you’re here to assess if I’m a high yield / low risk hire, I value your time, here's a
-                  quick look at my programming<a className='subLinks'> artifacts</a>.
+                  quick look at my programming<a className='subLinks'> <strong>artifacts</strong></a>.
                   <Divider hidden />
-                </Header>
+                </p>
               </Grid.Column>
             </Grid>
           </Segment>
