@@ -4,6 +4,7 @@ import {
   Image,
   Button,
   Modal,
+  Divider,
   Header
 } from 'semantic-ui-react';
 
@@ -55,9 +56,18 @@ class Fitness extends Component {
                 dimmer='blurring'
               />
               <Modal.Description>
-                <Header>Fitness</Header>
-                <p>ready set go!</p>
-                <p>ready set go!</p>
+                There are plenty of <a className='subLinks'
+                  href='https://www.healthline.com/nutrition/10-benefits-of-exercise'> <strong>reasons</strong> </a>
+                why people should work out. My reason is to gain functional strength that I can utilize in everyday
+                tasks because the older one gets, the longer it takes for one’s body to heal. Therefore, in order to minimize
+                an injury, I should train the entire body, which is why my choice of exercise is calisthenics (body-weight training).
+                The main benefits of calisthenics are: the mastery over your body, the freedom of creativity over the exercises,
+                increased flexibility, and development of mental control over those slow and controlled movements (which I believe can
+                help to increase focus).
+                <Divider hidden />
+                <ul><strong>Here are two channels that have great content:</strong></ul>
+                <li><a className='subLinks' href='https://www.youtube.com/user/TheMiamiTrainer'><strong>OFFICALTHENX</strong></a></li>
+                <li><a className='subLinks' href='https://www.youtube.com/channel/UCZIIRX8rkNjVpP-oLMHpeDw'><strong>Calisthenicmovement</strong></a></li>
               </Modal.Description>
             </Modal.Content>
             <Modal.Actions>
