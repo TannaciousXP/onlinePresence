@@ -4,6 +4,7 @@ import {
   Image,
   Button,
   Modal,
+  Divider,
   Header
 } from 'semantic-ui-react';
 
@@ -52,12 +53,26 @@ class Meditate extends Component {
                 wrapped
                 size='medium'
                 src='/assets/photos/meditate.jpg'
-                dimmer='blurring'
               />
               <Modal.Description>
-                <Header>Meditate</Header>
-                <p>OOHMMMM</p>
-                <p>OOHMMMM</p>
+
+                With all the <a className='subLinks' href='https://liveanddare.com/benefits-of-meditation/ '>
+                  <strong>studies about meditation</strong> </a>it seems like an easy habit to pick up because all
+                you do is sit in an upright position and close your eyes. However, meditation was the hardest habit
+                for me to pick up because of my active lifestyle, so sitting in a still position and clearing your
+                mind seemed very unnatural.
+                <Divider hidden/>
+                Once I decided to really build this habit, it got easier over time
+                as the more I practiced, the more noticeable the benefits became.
+                I started with meditating for only one minute a day, until I felt
+                it was time to increase the duration and repeat the process. Now, I
+                meditate for ten minutes, 4x a week, first thing when I wake up.
+                Regarding my day to day, my mental fatigue has decreased meaning
+                that my work output has increased in tandem with my emotional well-being.
+                <Divider hidden/>
+                Here’s a <a className='subLinks' href='https://www.youtube.com/results?search_query=10+minute+meditation'>
+                  <strong>list of videos for meditation</strong> </a>. I generally like to mix it up with guided meditation,
+                where you follow the instructors or listen to just the music to practice self-reflection / self-awareness.
               </Modal.Description>
             </Modal.Content>
             <Modal.Actions>
