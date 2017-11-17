@@ -47,23 +47,26 @@ class Home extends Component {
               </Grid.Column>
 
               <Grid.Column width={11}>
-                <Header className='head intro' as='h1'>Welcome and Thank you for visiting my page</Header>
+                <Header className='head intro' as='h1'>Welcome and thank you for visiting my page</Header>
                 <Divider fitted/>
-                <Header className='intro content' size='small' textAlign='left'>
-                I am a JavaScript full-stack engineer with experience across the stack and a strong
-                command of relevant technologies. I have a passion for making a positive impact around
-                me by utilizing my creative problem solving technique. I’m an extrovert by nature,
-                so I enjoy meeting people and networking. I’m a autodidact, and I love to learn. I'm
-                keen on being given a responsibility that is larger than my comfort zone because it
-                forces me to grow. I enjoy working with other people because I know the heights a well organize,
-                transparent, and harmonious team can reach. I would love nothing more than to share a common goal
-                and reaching it together.
+                <Divider hidden />
+                <Header className='intro content' size='small' floated='left' textAlign='justified'>
+                  I am a Full-Stack JavaScript Engineer with experience across the stack and a strong command
+                  of relevant technologies. I have a passion for making a positive impact around me by utilizing
+                  my creative problem-solving abilities. As an autodidact, I love to learn. I'm keen on being
+                  given responsibilities that are beyond my comfort zone because they force me to grow. I’m
+                  an extrovert by nature, so I enjoy meeting people and networking. I enjoy working with other
+                  people because I know the heights a well-organized, transparent, and harmonious team can reach.
+                  I would love nothing more than to share a common goal and reach it together.
                   <Divider hidden />
-                I value your time so here is a quick look at my programming [artifacts] = Button
+                  If you have a bit more time and would like to know more about me, hover over the icons and
+                  click on the hidden pictures to check out my
+                  <a className='subLinks' href='https://www.youtube.com/watch?v=7DSscQlSZR4'> three keystone habits </a>
+                  and why having pets could help you through the day.
                   <Divider hidden />
-                If you have a bit more time and would like to know more about me, hover over the icons
-                and click on the hidden pictures to checkout my 3 keystone habits and why having pets will
-                get you through the day.
+                  If you’re here to assess if I’m a high yield / low risk hire, I value your time, here's a
+                  quick look at my programming<a className='subLinks'> artifacts</a>.
+                  <Divider hidden />
                 </Header>
               </Grid.Column>
             </Grid>

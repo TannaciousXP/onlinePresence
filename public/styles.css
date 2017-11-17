@@ -235,6 +235,11 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
   color: #616161;
 }
 
+/* subLinks ---------------------------------------- */
+.subLinks {
+  color: #CF000F;
+}
+
 /* Preloader ---------------------------------------- */
 
 #preloader {
