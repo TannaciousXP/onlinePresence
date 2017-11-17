@@ -55,7 +55,7 @@ class Projects extends Component {
           <Header className='title repo' as='h3' textAlign='left' floated='left'>FULL-STACK PROJECTS:</Header>
         </Grid.Row>
 
-        <Grid.Row columns={4}>
+        <Grid.Row columns={4} stretched>
 
           {
             JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos[0], repo => {
