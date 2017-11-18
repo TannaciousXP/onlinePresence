@@ -47,7 +47,7 @@ class Meditate extends Component {
             open={ (isModalOpen && modal === renderModal) ? true : false}
             dimmer='blurring'
           >
-            <Modal.Header>Meditation</Modal.Header>
+            <Modal.Header>MEDITATION</Modal.Header>
             <Modal.Content image>
               <Image
                 wrapped

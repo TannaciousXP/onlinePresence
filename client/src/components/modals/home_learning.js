@@ -48,7 +48,7 @@ class Learning extends Component {
             open={ (isModalOpen && modal === renderModal) ? true : false }
             dimmer='blurring'
           >
-            <Modal.Header>Learning</Modal.Header>
+            <Modal.Header>LEARNING</Modal.Header>
             <Modal.Content image>
               <Image
                 wrapped

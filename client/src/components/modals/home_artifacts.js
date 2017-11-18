@@ -23,10 +23,11 @@ class Artifacts extends Component {
         open={(isModalOpen && 'Artifact' === renderModal) ? true : false}
         dimmer='blurring'
       >
-        <Modal.Header>Artifacts</Modal.Header>
+        <Modal.Header>ARTIFACTS</Modal.Header>
         <Modal.Content>
           <Modal.Description>
-            <Header>WHY I AM A LOW RISK HIGHER</Header>
+            <Header></Header>
+
           </Modal.Description>
 
         </Modal.Content>

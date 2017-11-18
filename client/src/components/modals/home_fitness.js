@@ -47,11 +47,11 @@ class Fitness extends Component {
             open={ (isModalOpen && modal === renderModal) ? true : false}
             dimmer='blurring'
           >
-            <Modal.Header>Fitness</Modal.Header>
+            <Modal.Header>FITNESS</Modal.Header>
             <Modal.Content image>
               <Image
                 wrapped
-                
+
                 src='/assets/photos/fitness.jpg'
               />
               <Modal.Description>
