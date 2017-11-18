@@ -27,8 +27,12 @@ let links = {
     vSauce: 'https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA'
   },
   about: {
-    'c&g': {
-
+    'cg': {
+      dapper: 'http://www.lifestyleasia.com/453428/the-cut-hong-kongs-most-dapper-barbers/#2',
+      laneCrawFord: 'http://www.lanecrawford.com/discover/the-new-modern-grooming-checklist-64200009-20160831/shop/',
+      coconut: 'https://coconuts.co/hongkong/lifestyle/watch-hong-kong-barber-mad-skills-turn-hair-art-video/',
+      menClub: 'https://www.youtube.com/watch?v=jwRQ-hhEfm4&t=14s',
+      elle: 'https://www.elle.com.hk/life/lifestyle/braun-share-the-shave-teaser#QRAvqhlq74ZHYdd7.97'
     }
   }
 

@@ -124,11 +124,11 @@ class About extends Component {
                 <Divider hidden/>
                 <p className='text'>
                   <strong>Online Presence: <br/></strong>
-                  <li><a className='subLinks' href='http://www.lifestyleasia.com/453428/the-cut-hong-kongs-most-dapper-barbers/#2'><strong>Most dapper barbers</strong></a></li>
-                  <li><a className='subLinks' href='http://www.lanecrawford.com/discover/the-new-modern-grooming-checklist-64200009-20160831/shop/'><strong>Lanecrawford Modern grooming</strong></a></li>
-                  <li><a className='subLinks' href='https://coconuts.co/hongkong/lifestyle/watch-hong-kong-barber-mad-skills-turn-hair-art-video/'><strong>Versace design</strong></a></li>
-                  <li><a className='subLinks' href='https://www.youtube.com/watch?v=jwRQ-hhEfm4&t=14s'><strong>Menclub style video</strong></a></li>
-                  <li><a className='subLinks' href='https://www.elle.com.hk/life/lifestyle/braun-share-the-shave-teaser#QRAvqhlq74ZHYdd7.97'><strong>Elle magazine</strong></a></li>
+                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.about.cg.dapper)}><strong>Most dapper barbers</strong></a></li>
+                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.about.cg.laneCrawFord)}><strong>Lanecrawford Modern grooming</strong></a></li>
+                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.about.cg.coconut)}><strong>Versace design</strong></a></li>
+                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.about.cg.menClub)}><strong>Menclub style video</strong></a></li>
+                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.about.cg.elle)}><strong>Elle magazine</strong></a></li>
 
                 </p>
               </Grid.Column>
