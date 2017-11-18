@@ -10,7 +10,7 @@ import {
 
 import { connect } from 'react-redux';
 
-import Links from '../../../../public/links';
+import links from '../../../../public/links';
 import helper from '../../../../server/helperFuncs';
 
 class Fitness extends Component {
@@ -59,7 +59,7 @@ class Fitness extends Component {
               />
               <Modal.Description>
                 There are plenty of <a className='subLinks'
-                  href='https://www.healthline.com/nutrition/10-benefits-of-exercise'> <strong>reasons</strong> </a>
+                  onClick={() => helper.openNewTab(links.fitness.benefits)}> <strong>reasons</strong> </a>
                 why people should work out. My reason is to gain functional strength that I can utilize in everyday
                 tasks because the older one gets, the longer it takes for one’s body to heal. Therefore, in order to minimize
                 an injury, I should train the entire body, which is why my choice of exercise is calisthenics (body-weight training).
@@ -68,8 +68,8 @@ class Fitness extends Component {
                 help to increase focus).
                 <Divider hidden />
                 <ul><strong>Here are two channels that have great content:</strong></ul>
-                <li><a className='subLinks' href='https://www.youtube.com/user/TheMiamiTrainer'><strong>OFFICALTHENX</strong></a></li>
-                <li><a className='subLinks' href='https://www.youtube.com/channel/UCZIIRX8rkNjVpP-oLMHpeDw'><strong>Calisthenicmovement</strong></a></li>
+                <li><a className='subLinks' onClick={() => helper.openNewTab(links.fitness.officalalthenx)}><strong>OFFICALTHENX</strong></a></li>
+                <li><a className='subLinks' onClick={() => helper.openNewTab(links.fitness.calisthenics)}><strong>Calisthenicmovement</strong></a></li>
               </Modal.Description>
             </Modal.Content>
             <Modal.Actions>

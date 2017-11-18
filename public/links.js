@@ -9,7 +9,9 @@ let links = {
 
   },
   fitness: {
-
+    benefits: 'https://www.healthline.com/nutrition/10-benefits-of-exercise',
+    officalalthenx: 'https://www.youtube.com/user/TheMiamiTrainer',
+    calisthenics: 'https://www.youtube.com/channel/UCZIIRX8rkNjVpP-oLMHpeDw'
   },
   meditation: {
     benefits: 'https://liveanddare.com/benefits-of-meditation/',
@@ -23,6 +25,11 @@ let links = {
     improve: 'https://www.youtube.com/channel/UCBIt1VN5j37PVM8LLSuTTlw',
     smarter: 'https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA',
     vSauce: 'https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA'
+  },
+  about: {
+    'c&g': {
+
+    }
   }
 
 };

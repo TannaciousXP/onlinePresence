@@ -14,6 +14,9 @@ import { showModal, viewModal } from '../actions';
 
 import VelvetyModal from '../components/modals/about_velvety';
 
+import links from '../../../public/links';
+import helper from '../../../server/helperFuncs';
+
 class About extends Component {
   constructor(props) {
     super(props);
