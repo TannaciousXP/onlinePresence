@@ -224,7 +224,7 @@ class About extends Component {
                 <Divider hidden/>
                 <p className='text'>
                   <strong>Online Presence:<br/></strong>
-                  <li>Hong Kong's biggest wine blog: <a className='subLinks' href='http://winetimeshk.com/food/velvety-2011-cabernet-sauvignon%E3%80%8C%E5%A4%A7%E7%94%B7%E4%BA%BA%E3%80%8D%E8%83%8C%E5%BE%8C%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/'>
+                  <li>Hong Kong's biggest wine blog: <a className='subLinks' onClick={() => helper.openNewTab(links.about.velvety.wineTimes)}>
                     <strong> WinetimesHK</strong></a></li>
                 </p>
               </Grid.Column>
