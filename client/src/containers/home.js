@@ -18,6 +18,7 @@ import Meditate from '../components/modals/home_meditation';
 import Pets from '../components/modals/home_pets';
 import Learning from '../components/modals/home_learning';
 import Fitness from '../components/modals/home_fitness';
+import Artifact from '../components/modals/home_artifacts';
 
 
 class Home extends Component {
@@ -71,10 +72,10 @@ class Home extends Component {
                 <p className='text'>
 
                 If you’re here to assess if I’m a high yield / low risk hire, I value your time, here's a
-                quick look at my programming<a className='subLinks'> <strong>artifacts</strong></a>.
+                quick look at my programming<a className='subLinks' onClick={() => this.show('Artifact')}> <strong>artifacts</strong></a>.
 
                 </p>
-
+                <Artifact/>
               </Grid.Column>
             </Grid>
           </Segment>

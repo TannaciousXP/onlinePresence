@@ -1,4 +1,4 @@
-import React, { Comopnent } from 'react';
+import React, { Component } from 'react';
 
 import {
   Modal,
@@ -16,9 +16,31 @@ class Artifacts extends Component {
   }
 
   render() {
-    let { isModalOpen, renderModal, clsoeModal } = this.props;
+    let { isModalOpen, renderModal, closeModal } = this.props;
     return (
-      <div>testing</div>
+      <Modal
+        onClose={closeModal}
+        open={(isModalOpen && 'Artifact' === renderModal) ? true : false}
+        dimmer='blurring'
+      >
+        <Modal.Header>Artifacts</Modal.Header>
+        <Modal.Content>
+          <Modal.Description>
+            <Header>WHY I AM A LOW RISK HIGHER</Header>
+          </Modal.Description>
+
+        </Modal.Content>
+        <Modal.Actions>
+          <Button
+            inverted
+            color='red'
+            icon='hand spock'
+            labelPosition='left'
+            content='Cool beans'
+            onClick={closeModal}
+          />
+        </Modal.Actions>
+      </Modal>
     );
   }
 
