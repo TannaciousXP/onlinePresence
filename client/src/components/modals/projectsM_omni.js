@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { Reveal, Image, Button, Modal, Header } from 'semantic-ui-react';
+import { Image, Button, Modal, Header } from 'semantic-ui-react';
 
 import { closeModal } from '../../actions';
 
