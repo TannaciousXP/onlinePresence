@@ -9,7 +9,22 @@ import {
   Image
 } from 'semantic-ui-react';
 
-export default class About extends Component {
+import { connect } from 'react-redux';
+import { showModal, viewModal } from '../actions';
+
+import VelvetyModal from '../components/modals/about_velvety';
+
+class About extends Component {
+  constructor(props) {
+    super(props);
+    this.show = this.show.bind(this);
+  }
+
+  show(str) {
+    this.props.viewModal(str);
+    this.props.showModal();
+  }
+
   render() {
     return (
       <Grid container verticalAlign='middle' centered padded>
@@ -200,8 +215,9 @@ export default class About extends Component {
                 <Divider hidden/>
                 <p className='text'>
                   <strong className='subLinks'>Hover over the icon </strong> to see my design for Velvety.<br/>
-                Checkout my <a className='subLinks'><strong> flashback</strong></a> for Velvety.
+                Checkout my <a className='subLinks' onClick={() => this.show('Velvety')}><strong> flashback</strong></a> for Velvety.
                 </p>
+                <VelvetyModal/>
                 <Divider hidden/>
                 <p className='text'>
                   <strong>Online Presence:<br/></strong>
@@ -216,3 +232,10 @@ export default class About extends Component {
     );
   }
 }
+
+const mapStateToProps = (state, ownProps) => {
+  return {
+  };
+};
+
+export default connect (mapStateToProps, {showModal, viewModal})(About);

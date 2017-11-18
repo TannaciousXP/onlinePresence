@@ -16,7 +16,7 @@ router.route('/about')
   .get((req, res) => {
     res.render('pages/about.ejs', {
       title: 'About',
-      background: `background-image: url('/assets/photos/about2.jpg`,
+      background: `background-image: url('/assets/photos/about2.jpg')`,
     });
   });
 

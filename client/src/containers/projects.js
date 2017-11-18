@@ -100,7 +100,6 @@ class Projects extends Component {
 const mapStateToProps = (state) => {
   return {
     isFetched: state.isFetched,
-    // userRepo: state.userRepo,
     listOfRepos: state.listOfRepos,
   };
 };

@@ -246,6 +246,30 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
   text-align: justify;
   font-size: large;
 }
+.text2 {
+  color: rgb(236, 240, 235);
+  text-align: center;
+  font-size: large;
+  margin-top: 0.3125em;
+}
+/* slideWrapper ---------------------------------------- */
+
+.swiper-container {
+  background-color: rgba(0, 0, 0, .85);
+}
+
+.swiper-pagination-bullet-active {
+  background: #CF000F !important;
+}
+
+.swiper-button-next {
+  background-image: url('/assets/logos/right.png') !important;
+}
+
+.swiper-button-prev {
+  background-image: url('/assets/logos/left.png') !important;
+}
+
 /* Preloader ---------------------------------------- */
 
 #preloader {
