@@ -31,11 +31,11 @@ class Artifacts extends Component {
           <Modal.Description>
             <Header size='medium'>I write clean code in variety of languages and frameworks:</Header>
             <li><a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kSchemas)}><strong>SQL schemas with Knex</strong></a></li>
-            <li><a className='subLinks' onClick={() => helper.openInNewTab(links.artifacts.bsModel)}><strong>SQL models with Bookshelf ORM</strong></a></li>
-            <li><a className='subLinks' onClick={() => helper.openInNewTab(links.artifacts.kQuery)}><strong>SQL query builder with Knex</strong></a></li>
-            <li><a className='subLinks' onClick={() => helper.openInNewTab(links.artifacts.kMigration)}><strong>SQL schemas migration Knex</strong></a></li>
-            <li><a className='subLinks' onClick={() => helper.openInNewTab(links.artifacts.cJavaScript)}><strong>Client-side JavaScript</strong></a></li>
-            <li><a className='subLinks' onClick={() => helper.openInNewTab(links.artifacts.modHTMLCSS)}><strong>Modern HTML and CSS</strong></a></li>
+            <li><a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.bsModel)}><strong>SQL models with Bookshelf ORM</strong></a></li>
+            <li><a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kQuery)}><strong>SQL query builder with Knex</strong></a></li>
+            <li><a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kMigration)}><strong>SQL schemas migration Knex</strong></a></li>
+            <li><a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.cJavaScript)}><strong>Client-side JavaScript</strong></a></li>
+            <li><a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.modHTMLCSS)}><strong>Modern HTML and CSS</strong></a></li>
           </Modal.Description>
 
         </Modal.Content>
