@@ -57,7 +57,7 @@ class Meditate extends Component {
                 src='/assets/photos/meditate.jpg'
               />
               <Modal.Description>
-                With all the <a className='subLinks' onClick={() => helper.openInNewTab(links.meditation.benefits)}>
+                With all the <a className='subLinks' onClick={() => helper.openNewTab(links.meditation.benefits)}>
                   <strong>studies about meditation</strong> </a>it seems like an easy habit to pick up because all
                 you do is sit in an upright position and close your eyes. However, meditation was the hardest habit
                 for me to pick up because of my active lifestyle, so sitting in a still position and clearing your
@@ -71,7 +71,7 @@ class Meditate extends Component {
                 Regarding my day to day, my mental fatigue has decreased meaning
                 that my work output has increased in tandem with my emotional well-being.
                 <Divider hidden/>
-                Here’s a <a className='subLinks' onClick={() => helper.openInNewTab(links.meditation.videos)}>
+                Here’s a <a className='subLinks' onClick={() => helper.openNewTab(links.meditation.videos)}>
                   <strong>list of videos for meditation</strong> </a>. I generally like to mix it up with guided meditation,
                 where you follow the instructors or listen to just the music to practice self-reflection / self-awareness.
               </Modal.Description>

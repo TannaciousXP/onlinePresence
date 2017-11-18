@@ -16,7 +16,7 @@ let links = {
     videos: 'https://www.youtube.com/results?search_query=10+minute+meditation'
   },
   learning: {
-
+    benefits: 'https://www.lifehack.org/articles/lifestyle/10-benefits-reading-why-you-should-read-everyday.html',
   }
 
 };

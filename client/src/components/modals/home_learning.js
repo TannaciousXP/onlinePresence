@@ -10,7 +10,7 @@ import {
 
 import { connect } from 'react-redux';
 
-import Links from '../../../../public/links';
+import links from '../../../../public/links';
 import helper from '../../../../server/helperFuncs';
 
 class Learning extends Component {
@@ -67,7 +67,7 @@ class Learning extends Component {
                   I love to learn because I believe that every new stage of your life requires a better version of yourself.
                 <Divider hidden />
                   Reading would be the most beneficial learning tool for these <a className='subLinks'
-                  href='https://www.lifehack.org/articles/lifestyle/10-benefits-reading-why-you-should-read-everyday.html'> 10 reasons. </a>
+                  onClick={() => helper.openNewTab(links.learning.benefits)}> 10 reasons. </a>
                   Here are some books that made a positive impact on my life
                 <Divider hidden/>
 
