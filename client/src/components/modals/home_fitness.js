@@ -10,6 +10,9 @@ import {
 
 import { connect } from 'react-redux';
 
+import Links from '../../../../public/links';
+import helper from '../../../../server/helperFuncs';
+
 class Fitness extends Component {
   constructor(props) {
     super(props);

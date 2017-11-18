@@ -10,17 +10,14 @@ import {
 import { connect } from 'react-redux';
 import { closeModal } from '../../actions';
 
-import Links from '../../../../public/links';
+import links from '../../../../public/links';
+import helper from '../../../../server/helperFuncs';
 
 class Artifacts extends Component {
   constructor(props) {
     super(props);
-    this.openInNewTab = this.openInNewTab.bind(this);
   }
-  openInNewTab(url) {
-    let tab = window.open(url, '_blank');
-    tab.focus();
-  }
+
   render() {
     let { isModalOpen, renderModal, closeModal } = this.props;
     return (
@@ -33,12 +30,12 @@ class Artifacts extends Component {
         <Modal.Content>
           <Modal.Description>
             <Header size='medium'>I write clean code in variety of languages and frameworks:</Header>
-            <li><a className='subLinks' onClick={() => this.openInNewTab(Links.kSchemas)}><strong>SQL schemas with Knex</strong></a></li>
-            <li><a className='subLinks' onClick={() => this.openInNewTab(Links.bsModel)}><strong>SQL models with Bookshelf ORM</strong></a></li>
-            <li><a className='subLinks' onClick={() => this.openInNewTab(Links.kQuery)}><strong>SQL query builder with Knex</strong></a></li>
-            <li><a className='subLinks' onClick={() => this.openInNewTab(Links.kMigration)}><strong>SQL schemas migration Knex</strong></a></li>
-            <li><a className='subLinks' onClick={() => this.openInNewTab(Links.cJavaScript)}><strong>Client-side JavaScript</strong></a></li>
-            <li><a className='subLinks' onClick={() => this.openInNewTab(Links.modHTMLCSS)}><strong>Modern HTML and CSS</strong></a></li>
+            <li><a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kSchemas)}><strong>SQL schemas with Knex</strong></a></li>
+            <li><a className='subLinks' onClick={() => helper.openInNewTab(links.artifacts.bsModel)}><strong>SQL models with Bookshelf ORM</strong></a></li>
+            <li><a className='subLinks' onClick={() => helper.openInNewTab(links.artifacts.kQuery)}><strong>SQL query builder with Knex</strong></a></li>
+            <li><a className='subLinks' onClick={() => helper.openInNewTab(links.artifacts.kMigration)}><strong>SQL schemas migration Knex</strong></a></li>
+            <li><a className='subLinks' onClick={() => helper.openInNewTab(links.artifacts.cJavaScript)}><strong>Client-side JavaScript</strong></a></li>
+            <li><a className='subLinks' onClick={() => helper.openInNewTab(links.artifacts.modHTMLCSS)}><strong>Modern HTML and CSS</strong></a></li>
           </Modal.Description>
 
         </Modal.Content>
