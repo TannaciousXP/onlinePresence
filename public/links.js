@@ -5,7 +5,13 @@ let links = {
     kSchemas: 'https://github.com/TannaciousXP/Omni-Chat/blob/master/db/migrations/20170326215143_initial.js#L16-L28',
     kMigration: 'https://github.com/TannaciousXP/Omni-Chat/blob/88f44ce9df4fd600a9378be44691c4910de938b7/db/migrations/20170326215143_initial.js#L77-L90',
     cJavaScript: 'https://github.com/TannaciousXP/scrabble-word-finder/blob/master/scripts.js#L11-L46',
-    modHTMLCSS: 'https://github.com/TannaciousXP/pxtan/blob/master/public/styles.css#L275-L290'
+    modHTMLCSS: 'https://github.com/TannaciousXP/pxtan/blob/master/public/styles.css#L275-L290',
+    'reactComp': 'https://github.com/TannaciousXP/Omni-Chat/blob/master/client/src/containers/group_list.js#L12-L73',
+    reduxAction: 'https://github.com/TannaciousXP/Omni-Chat/blob/master/client/src/actions/index.js#L42-L48',
+    reduxReducer: 'https://github.com/TannaciousXP/Omni-Chat/blob/master/client/src/reducers/reducer_attendees.js#L1-L15',
+    rootReducer: 'https://github.com/TannaciousXP/Omni-Chat/blob/master/client/src/reducers/index.js#L17-L34',
+    reactRouterDom: 'https://github.com/TannaciousXP/Omni-Chat/blob/master/client/src/components/router.js#L1-L24',
+    browserRouter: 'https://github.com/TannaciousXP/Omni-Chat/blob/master/client/src/app.js#L20-L28'
 
   },
   fitness: {

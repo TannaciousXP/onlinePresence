@@ -19,17 +19,10 @@ class OmniModal extends Component {
         dimmer='blurring'
       >
         <Modal.Header>Omni Chat</Modal.Header>
-        <Modal.Content image>
-          <Image
-            wrapped
-            size='medium'
-            src='/assets/photos/photoshoot.jpg'
-            dimmer='blurring'
-          />
+        <Modal.Content>
           <Modal.Description>
-            <Header>Omni Chat</Header>
-            <p>study study study</p>
-            <p>study study study</p>
+            <Header>Omni Chat details coming soon</Header>
+
           </Modal.Description>
         </Modal.Content>
         <Modal.Actions>
