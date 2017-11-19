@@ -20,6 +20,9 @@ import Learning from '../components/modals/home_learning';
 import Fitness from '../components/modals/home_fitness';
 import Artifact from '../components/modals/home_artifacts';
 
+import links from '../../../public/links';
+import helper from '../../../server/helperFuncs';
+
 
 class Home extends Component {
   constructor(props) {
@@ -63,7 +66,7 @@ class Home extends Component {
                 <Divider hidden/>
                 <p className='text'>
                 If you have a bit more time and would like to know more about me, hover over the icons and
-                click on the hidden pictures to check out my <a className='subLinks' href='https://www.youtube.com/watch?v=7DSscQlSZR4'> <strong>three keystone habits</strong> </a>
+                click on the hidden pictures to check out my <a className='subLinks' onClick={() => helper.openNewTab(links.home.keyHabits)}> <strong>three keystone habits</strong> </a>
                 and why having pets could help you through the day.
 
 

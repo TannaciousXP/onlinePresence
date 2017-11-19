@@ -240,6 +240,11 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
   color: #CF000F;
 }
 
+a.subLinks:hover {
+  cursor: pointer;
+  color: #8F1D21;
+}
+
 /* text ---------------------------------------- */
 .text {
   color: rgb(236, 240, 235);

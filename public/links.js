@@ -37,6 +37,9 @@ let links = {
     velvety: {
       wineTimes: 'http://winetimeshk.com/food/velvety-2011-cabernet-sauvignon%E3%80%8C%E5%A4%A7%E7%94%B7%E4%BA%BA%E3%80%8D%E8%83%8C%E5%BE%8C%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/',
     }
+  },
+  home: {
+    keyHabits: 'https://www.youtube.com/watch?v=7DSscQlSZR4'
   }
 
 };
