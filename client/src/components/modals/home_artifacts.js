@@ -18,6 +18,7 @@ import CleanCode from '../lists/cleanCode';
 import ReactFrame from '../lists/reactFrame';
 import Organize from '../lists/organize';
 import DevTools from '../lists/devTools';
+import ComputerScience from '../lists/computerScience';
 
 class Artifacts extends Component {
   constructor(props) {
@@ -26,8 +27,8 @@ class Artifacts extends Component {
 
   render() {
     let { isModalOpen, renderModal, closeModal } = this.props;
-    let ds = links.artifacts.ds;
-    let ineritance = links.artifacts.inheritance;
+    let ds = Object.keys(links.artifacts.ds);
+    let inheritance = Object.keys(links.artifacts.inheritance);
     return (
       <Modal
         onClose={closeModal}
@@ -58,6 +59,7 @@ class Artifacts extends Component {
             <DevTools/>
 
             <Header size='medium'>I have a pragmatic grounding in computer science concepts</Header>
+            <ComputerScience inheritance={inheritance} ds={ds}/>
 
 
 
