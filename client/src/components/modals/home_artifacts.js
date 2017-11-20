@@ -17,6 +17,7 @@ import helper from '../../../../server/helperFuncs';
 import CleanCode from '../lists/cleanCode';
 import ReactFrame from '../lists/reactFrame';
 import Organize from '../lists/organize';
+import DevTools from '../lists/devTools';
 
 class Artifacts extends Component {
   constructor(props) {
@@ -25,6 +26,8 @@ class Artifacts extends Component {
 
   render() {
     let { isModalOpen, renderModal, closeModal } = this.props;
+    let ds = links.artifacts.ds;
+    let ineritance = links.artifacts.inheritance;
     return (
       <Modal
         onClose={closeModal}
@@ -52,6 +55,11 @@ class Artifacts extends Component {
             <Organize/>
 
             <Header size='medium'>I productively use common developer tools</Header>
+            <DevTools/>
+
+            <Header size='medium'>I have a pragmatic grounding in computer science concepts</Header>
+
+
 
           </Modal.Description>
 

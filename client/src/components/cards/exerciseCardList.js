@@ -4,13 +4,14 @@ import {
   Button
 } from 'semantic-ui-react';
 
+import helper from '../../../../server/helperFuncs';
 
 const ExerciseCardList = ({name, meta, link}) => (
   <Card raised color='grey' className='card'>
     <Card.Content
       header={meta}
       meta={name.toUpperCase()}
-      description={<Button size='mini' color='red' href={link}>See Repo</Button>}
+      description={<Button size='mini' color='red' onClick={() => helper.openNewTab(link)}>See Repo</Button>}
       className='cardsDisplay'
     />
   </Card>

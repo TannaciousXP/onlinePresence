@@ -11,7 +11,29 @@ let links = {
     reduxReducer: 'https://github.com/TannaciousXP/Omni-Chat/blob/master/client/src/reducers/reducer_attendees.js#L1-L15',
     rootReducer: 'https://github.com/TannaciousXP/Omni-Chat/blob/master/client/src/reducers/index.js#L17-L34',
     reactRouterDom: 'https://github.com/TannaciousXP/Omni-Chat/blob/master/client/src/components/router.js#L1-L24',
-    browserRouter: 'https://github.com/TannaciousXP/Omni-Chat/blob/master/client/src/app.js#L20-L28'
+    browserRouter: 'https://github.com/TannaciousXP/Omni-Chat/blob/master/client/src/app.js#L20-L28',
+    promises: 'https://github.com/TannaciousXP/spotify-search/blob/master/server/helpers/helperFuncs.js#L218-L255',
+    chromeDev: {
+      react: 'https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en',
+      redux: 'https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en',
+    },
+    codeEditor: 'https://code.visualstudio.com/',
+    eslint: 'https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint',
+    ds: {
+      Set: 'https://github.com/TannaciousXP/data-structures/blob/master/sprint-two/src/set.js',
+      Tree: 'https://github.com/TannaciousXP/data-structures/blob/master/sprint-two/src/tree.js',
+      Graph: 'https://github.com/TannaciousXP/data-structures/blob/master/sprint-two/src/graph.js',
+      'Hash Table': 'https://github.com/TannaciousXP/data-structures/blob/master/sprint-two/src/hashTable.js',
+      'Linked List': 'https://github.com/TannaciousXP/data-structures/blob/master/sprint-two/src/linkedList.js',
+      'Binary Search Tree': 'https://github.com/TannaciousXP/data-structures/blob/master/sprint-two/src/binarySearchTree.js',
+    },
+    inheritance: {
+      Functional: 'https://github.com/TannaciousXP/data-structures/tree/master/sprint-one/src/functional',
+      'Functional-shared': 'https://github.com/TannaciousXP/data-structures/tree/master/sprint-one/src/functional-shared',
+      Prototypal: 'https://github.com/TannaciousXP/data-structures/tree/master/sprint-one/src/prototypal',
+      Pseudoclassical: 'https://github.com/TannaciousXP/data-structures/tree/master/sprint-one/src/pseudoclassical'
+    }
+
 
   },
   fitness: {

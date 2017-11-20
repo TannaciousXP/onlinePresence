@@ -27,6 +27,9 @@ const CleanCode = () => (
     <List.Item as ='li'>
       <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.modHTMLCSS)}>Modern HTML and CSS</a>
     </List.Item>
+    <List.Item as ='li'>
+      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.promises)}>Promises</a>
+    </List.Item>
   </List>
 );
 
