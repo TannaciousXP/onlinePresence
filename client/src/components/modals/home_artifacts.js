@@ -36,7 +36,7 @@ class Artifacts extends Component {
         dimmer='blurring'
       >
         <Modal.Header>ARTIFACTS: <span style={{color: 'rgb(236, 240, 235)'}}>click on the <span className='subLinks'> red </span> words to view code snippet</span></Modal.Header>
-        <Modal.Content>
+        <Modal.Content scrolling>
           <Modal.Description>
 
             <Header size='large'>I write clean code in variety of languages and frameworks:</Header>
