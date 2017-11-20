@@ -40,7 +40,7 @@ export default class ComputerScience extends Component {
     return (
       <List as='ol'>
         <List.Item as='li' value='•'>
-        Inhertiance
+        Inheritance
           <List.Item as='ol'>
             {
               this.renderInheritance(inheritance)
