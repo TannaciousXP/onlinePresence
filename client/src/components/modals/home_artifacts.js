@@ -15,6 +15,8 @@ import links from '../../../../public/links';
 import helper from '../../../../server/helperFuncs';
 
 import CleanCode from '../lists/cleanCode';
+import ReactFrame from '../lists/reactFrame';
+import Organize from '../lists/organize';
 
 class Artifacts extends Component {
   constructor(props) {
@@ -37,6 +39,7 @@ class Artifacts extends Component {
             <CleanCode/>
 
             <strong>REACT Framework: <br/></strong>
+            <ReactFrame/>
 
             <Header>I am organized, careful about planning and executing work:
               <Header.Subheader>I know that "just diving into coding" is a huge anti-pattern,
@@ -45,7 +48,7 @@ class Artifacts extends Component {
               </Header.Subheader>
             </Header>
             <strong>Omni Chat planning:</strong>
-
+            <Organize/>
 
           </Modal.Description>
 
