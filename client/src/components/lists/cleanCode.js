@@ -10,22 +10,22 @@ import helper from '../../../../server/helperFuncs';
 const CleanCode = () => (
   <List as='ul'>
     <List.Item as ='li'>
-      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kSchemas)}><strong>SQL schemas with Knex</strong></a>
+      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kSchemas)}>SQL schemas with Knex</a>
     </List.Item>
     <List.Item as ='li'>
-      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.bsModel)}><strong>SQL models with Bookshelf ORM</strong></a>
+      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.bsModel)}>SQL models with Bookshelf ORM</a>
     </List.Item>
     <List.Item as ='li'>
-      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kQuery)}><strong>SQL query builder with Knex</strong></a>
+      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kQuery)}>SQL query builder with Knex</a>
     </List.Item>
     <List.Item as ='li'>
-      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kMigration)}><strong>SQL schemas migration Knex</strong></a>
+      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kMigration)}>SQL schemas migration Knex</a>
     </List.Item>
     <List.Item as ='li'>
-      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.cJavaScript)}><strong>Client-side JavaScript</strong></a>
+      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.cJavaScript)}>Client-side JavaScript</a>
     </List.Item>
     <List.Item as ='li'>
-      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.modHTMLCSS)}><strong>Modern HTML and CSS</strong></a>
+      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.modHTMLCSS)}>Modern HTML and CSS</a>
     </List.Item>
   </List>
 );

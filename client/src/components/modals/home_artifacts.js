@@ -41,7 +41,8 @@ class Artifacts extends Component {
             <strong>REACT Framework: <br/></strong>
             <ReactFrame/>
 
-            <Header>I am organized, careful about planning and executing work:
+            <Header>
+              I am organized, careful about planning and executing work:
               <Header.Subheader>I know that "just diving into coding" is a huge anti-pattern,
               and actively avoid that pattern. At the same time, I know that sketching out "the skeleton",
               making things concrete, is important to getting a working plan of attack.
@@ -49,6 +50,8 @@ class Artifacts extends Component {
             </Header>
             <strong>Omni Chat planning:</strong>
             <Organize/>
+
+            <Header size='medium'>I productively use common developer tools</Header>
 
           </Modal.Description>
 
