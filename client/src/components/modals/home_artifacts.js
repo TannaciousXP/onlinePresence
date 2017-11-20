@@ -39,13 +39,19 @@ class Artifacts extends Component {
         <Modal.Content>
           <Modal.Description>
 
-            <Header size='medium'>I write clean code in variety of languages and frameworks:</Header>
+            <Header size='large'>I write clean code in variety of languages and frameworks:</Header>
             <CleanCode/>
 
             <strong>REACT Framework: <br/></strong>
             <ReactFrame/>
 
-            <Header>
+            <Header size='large'>I have a pragmatic grounding in computer science concepts</Header>
+            <ComputerScience inheritance={inheritance} ds={ds}/>
+
+            <Header size='large'>I productively use common developer tools</Header>
+            <DevTools/>
+
+            <Header size='large'>
               I am organized, careful about planning and executing work:
               <Header.Subheader>I know that "just diving into coding" is a huge anti-pattern,
               and actively avoid that pattern. At the same time, I know that sketching out "the skeleton",
@@ -55,11 +61,6 @@ class Artifacts extends Component {
             <strong>Omni Chat planning:</strong>
             <Organize/>
 
-            <Header size='medium'>I productively use common developer tools</Header>
-            <DevTools/>
-
-            <Header size='medium'>I have a pragmatic grounding in computer science concepts</Header>
-            <ComputerScience inheritance={inheritance} ds={ds}/>
 
 
 

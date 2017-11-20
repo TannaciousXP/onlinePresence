@@ -20,7 +20,7 @@ const DevTools = () => (
       CLIs for all the main tools I use (mongo, mysql, pg, node, etc)
     </List.Item>
     <List.Item as='li'>
-      A morden <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.codeEditor)}>code editor</a>
+      A morden <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.codeEditor)}>code editor </a>
       and it's key features
     </List.Item>
     <List.Item as='li'>
