@@ -75,7 +75,7 @@ class Projects extends Component {
         </Grid.Row>
 
         <Grid.Row className='project title'>
-          <Header className='title repo' as='h3' textAlign='left' floated='left'>PROJECTS COMPONENT:</Header>
+          <Header className='title repo' as='h3' textAlign='left' floated='left'>PROJECT COMPONENTS:</Header>
         </Grid.Row>
 
         <Grid.Row>
