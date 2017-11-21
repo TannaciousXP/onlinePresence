@@ -5,6 +5,8 @@ import { Image, Button, Modal, Header } from 'semantic-ui-react';
 import { closeModal } from '../../actions';
 
 import UserStories from '../lists/userStories';
+import Organize from '../lists/organize';
+import ProjectManagement from '../lists/projectManagement';
 
 class OmniModal extends Component {
   constructor(props) {
@@ -32,6 +34,10 @@ class OmniModal extends Component {
             user pairings and use visualization techniques to display user trends.
             <Header size='large'>User Stories</Header>
             <UserStories/>
+            <Header size='large'>Project Management</Header>
+            <ProjectManagement/>
+            <Header size='large'>Planning</Header>
+            <Organize/>
           </Modal.Description>
         </Modal.Content>
         <Modal.Actions>
