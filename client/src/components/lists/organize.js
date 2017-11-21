@@ -38,22 +38,27 @@ const Organize = () => (
       I plan in terms of components and flows through component
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
+          Login:
           <Image size='large' src='/assets/wireFrames/login.png'/>
           <Image size='large' src='/assets/omniChat/login.jpg'/>
         </List.Item>
         <List.Item as='li' value='°'>
+          Messages:
           <Image size='large' src='/assets/wireFrames/messages.png'/>
           <Image size='large' src='/assets/omniChat/messages.jpg'/>
         </List.Item>
         <List.Item as='li' value='°'>
+          Video Chat:
           <Image size='large' src='/assets/wireFrames/videoChat.png'/>
           <Image size='large' src='/assets/omniChat/video.jpg'/>
         </List.Item>
         <List.Item as='li' value='°'>
+          Events:
           <Image size='large' src='/assets/wireFrames/eventDetails.png'/>
           <Image size='large' src='/assets/omniChat/event.jpg'/>
         </List.Item>
         <List.Item as='li' value='°'>
+          Friends:
           <Image size='large' src='/assets/wireFrames/friends.png'/>
           <Image size='large' src='/assets/omniChat/friends.jpg'/>
         </List.Item>
