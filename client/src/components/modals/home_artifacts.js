@@ -61,11 +61,7 @@ class Artifacts extends Component {
             <strong>Omni Chat planning:</strong>
             <Organize/>
 
-
-
-
           </Modal.Description>
-
         </Modal.Content>
         <Modal.Actions>
           <Button

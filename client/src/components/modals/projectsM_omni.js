@@ -4,6 +4,7 @@ import { Image, Button, Modal, Header } from 'semantic-ui-react';
 
 import { closeModal } from '../../actions';
 
+import UserStories from '../lists/userStories';
 
 class OmniModal extends Component {
   constructor(props) {
@@ -21,8 +22,14 @@ class OmniModal extends Component {
         <Modal.Header>Omni Chat</Modal.Header>
         <Modal.Content>
           <Modal.Description>
-            <Header>Omni Chat details coming soon</Header>
-
+            <Header size='large'>App overview</Header>
+            This application provides voice chat. Users will be able to signup
+            and login to the application, connect with each other, and add other
+            users on their friends list. They will also be able to create new
+            channels and groups as needed. We will incorporate geolocation-based
+            user pairings and use visualization techniques to display user trends.
+            <Header size='large'>User Stories</Header>
+            <UserStories/>
           </Modal.Description>
         </Modal.Content>
         <Modal.Actions>
