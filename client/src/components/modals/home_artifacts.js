@@ -34,6 +34,7 @@ class Artifacts extends Component {
         onClose={closeModal}
         open={(isModalOpen && 'Artifact' === renderModal) ? true : false}
         dimmer='blurring'
+        size='large'
       >
         <Modal.Header>ARTIFACTS: <span style={{color: 'rgb(236, 240, 235)'}}>click on the <span className='subLinks'> red </span> words to view code snippet</span></Modal.Header>
         <Modal.Content scrolling>

@@ -15,7 +15,7 @@ const Organize = () => (
       Structured, step-by-step problem solving process road map
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
-          <Image size='medium' src='/assets/omniChat/roadMap.png'/>
+          <Image centered size='medium' src='/assets/omniChat/roadMap.png'/>
         </List.Item>
       </List.Item>
     </List.Item>
@@ -23,7 +23,7 @@ const Organize = () => (
       Identify key choices and weigh the pros and cons
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
-          <Image size='medium' src='/assets/omniChat/keyChoices.png'/>
+          <Image centered size='medium' src='/assets/omniChat/keyChoices.png'/>
         </List.Item>
       </List.Item>
     </List.Item>
@@ -31,7 +31,7 @@ const Organize = () => (
       Root out assumptions and validate them as I go
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
-          <Image size='medium' src='/assets/omniChat/validation.jpg'/>
+          <Image centered size='medium' src='/assets/omniChat/validation.jpg'/>
         </List.Item>
       </List.Item>
     </List.Item>
@@ -80,7 +80,7 @@ const Organize = () => (
       Architecture
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
-          <Image size='large' src='/assets/omniChat/architecture.png'/>
+          <Image centered size='huge' src='/assets/omniChat/architecture.png'/>
         </List.Item>
       </List.Item>
     </List.Item>
@@ -88,7 +88,7 @@ const Organize = () => (
       Tech Stack
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
-          <Image size='large' src='/assets/omniChat/techStack.jpg'/>
+          <Image centered size='huge' src='/assets/omniChat/techStack.jpg'/>
         </List.Item>
       </List.Item>
     </List.Item>
