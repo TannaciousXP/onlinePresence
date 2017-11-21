@@ -24,7 +24,7 @@ const DevTools = () => (
       and it's key features
     </List.Item>
     <List.Item as='li'>
-      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.eslint)}>eslint</a>
+      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.eslint)}>Eslint</a>
     </List.Item>
   </List>
 );

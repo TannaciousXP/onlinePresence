@@ -19,7 +19,7 @@ const CleanCode = () => (
       <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kQuery)}>SQL query builder with Knex</a>
     </List.Item>
     <List.Item as ='li'>
-      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kMigration)}>SQL schemas migration Knex</a>
+      <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.kMigration)}>SQL schemas migration with Knex</a>
     </List.Item>
     <List.Item as ='li'>
       <a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.cJavaScript)}>Client-side JavaScript</a>
