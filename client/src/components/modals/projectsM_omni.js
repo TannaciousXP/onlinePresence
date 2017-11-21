@@ -22,7 +22,7 @@ class OmniModal extends Component {
         dimmer='blurring'
       >
         <Modal.Header>Omni Chat</Modal.Header>
-        <Modal.Content scrolling>
+        <Modal.Content scrolling size='large'>
           <Modal.Description>
             <Image centered size='large' src='/assets/omniChat/omniLogo.png'/>
             Logo Design by: Peter X. Tan

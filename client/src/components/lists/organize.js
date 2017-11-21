@@ -40,16 +40,8 @@ const Organize = () => (
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
           Login: <br/>
-          <Grid>
-            <Grid.Row stretched centered columsn={2}>
-              <Grid.Column>
-                <Image size='large' src='/assets/wireFrames/login.png'/>
-              </Grid.Column>
-              <Grid.Column>
-                <Image size='large' src='/assets/omniChat/login.jpg'/>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
+          <Image size='large' src='/assets/wireFrames/login.png'/>
+          <Image size='large' src='/assets/omniChat/login.jpg'/>
         </List.Item>
         <List.Item as='li' value='°'>
           Messages: <br/>
