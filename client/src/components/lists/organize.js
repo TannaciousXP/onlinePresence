@@ -41,6 +41,22 @@ const Organize = () => (
           <Image size='medium' src='/assets/wireFrames/login.png'/>
           <Image size='medium' src='/assets/omniChat/login.jpg'/>
         </List.Item>
+        <List.Item as='li' value='°'>
+          <Image size='medium' src='/assets/wireFrames/messages.png'/>
+          <Image size='medium' src='/assets/omniChat/messages.jpg'/>
+        </List.Item>
+        <List.Item as='li' value='°'>
+          <Image size='medium' src='/assets/wireFrames/videoChat.png'/>
+          <Image size='medium' src='/assets/omniChat/video.jpg'/>
+        </List.Item>
+        <List.Item as='li' value='°'>
+          <Image size='medium' src='/assets/wireFrames/eventDetails.png'/>
+          <Image size='medium' src='/assets/omniChat/event.jpg'/>
+        </List.Item>
+        <List.Item as='li' value='°'>
+          <Image size='medium' src='/assets/wireFrames/friends.png'/>
+          <Image size='medium' src='/assets/omniChat/friends.jpg'/>
+        </List.Item>
       </List.Item>
     </List.Item>
   </List>
