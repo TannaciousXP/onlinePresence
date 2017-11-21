@@ -8,7 +8,7 @@ const ProjectManagement = () => (
   <List as='ol' value='i'>
     <List.Item as='li'>
     Project Management
-      <List.Item as='ol'>
+      <List.Item as='ol' value='i'>
         <List.Item as='li'>
           Trello: Ticketing system
         </List.Item>
@@ -25,7 +25,7 @@ const ProjectManagement = () => (
     </List.Item>
     <List.Item as='li'>
       Pre-Gitflow
-      <List.Item as='ol'>
+      <List.Item as='ol' value='i'>
         <List.Item as='li'>
           Fork the repo from organization to personal
         </List.Item>
@@ -36,7 +36,7 @@ const ProjectManagement = () => (
     </List.Item>
     <List.Item as='li'>
     Gitflow
-      <List.Item as='ol'>
+      <List.Item as='ol' value='i'>
         <List.Item as='li'>
           Rebase upstream master in your master branch
         </List.Item>

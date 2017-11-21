@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import {
   List,
-  Image
+  Image,
+  Grid
 } from 'semantic-ui-react';
 
 import links from '../../../../public/links';
@@ -39,10 +40,14 @@ const Organize = () => (
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
           Login: <br/>
-          <span>
-            <Image size='medium' src='/assets/wireFrames/login.png'/>
-            <Image size='medium' src='/assets/omniChat/login.jpg'/>
-          </span>
+          <Grid>
+            <Grid.Column>
+              <Image size='large' src='/assets/wireFrames/login.png'/>
+            </Grid.Column>
+            <Grid.Column>
+              <Image size='large' src='/assets/omniChat/login.jpg'/>
+            </Grid.Column>
+          </Grid>
         </List.Item>
         <List.Item as='li' value='°'>
           Messages: <br/>
