@@ -224,11 +224,14 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
 .cardsDisplay {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.cardsDisplay a.ui.red.mini.ui.button {
+.cardsDisplay button.ui.red.mini.ui.button {
   margin: 3px;
   align-self: center;
+  display: flex;
+  vertical-align: bottom;
 }
 
 .ui.card .meta, .ui.cards>.card .meta {
