@@ -9,7 +9,7 @@ import helper from '../../../../server/helperFuncs';
 
 const DevTools = () => (
   <List as='ul'>
-    <List.Item as='li'>git</List.Item>
+    <List.Item as='li'>Git</List.Item>
     <List.Item as='li'>GitHub</List.Item>
     <List.Item as='li'>
       Chrome devtools and extensions for
