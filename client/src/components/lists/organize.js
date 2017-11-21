@@ -39,8 +39,10 @@ const Organize = () => (
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
           Login: <br/>
-          <Image size='large' src='/assets/wireFrames/login.png'/>
-          <Image size='large' src='/assets/omniChat/login.jpg'/>
+          <span>
+            <Image size='large' src='/assets/wireFrames/login.png'/>
+            <Image size='large' src='/assets/omniChat/login.jpg'/>
+          </span>
         </List.Item>
         <List.Item as='li' value='°'>
           Messages: <br/>

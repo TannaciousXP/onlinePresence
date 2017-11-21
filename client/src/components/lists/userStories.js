@@ -19,8 +19,7 @@ const UserStories = () => (
     As a user, I expect to be able to send text messages to other users and receive messages.
     </List.Item>
     <List.Item as='li' value='•'>
-    As a user, I expect to be able to speak with other users using voice chat,
-    but also be able to mute voice chat as necessary.
+    As a user, I expect to be able to speak using voice chat, but also be able to mute voice chat as necessary.
     </List.Item>
     <List.Item as='li' value='•'>
       As a user, I expect to be able to log out to protect my information/privacy.
