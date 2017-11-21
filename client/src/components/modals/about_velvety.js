@@ -43,7 +43,7 @@ class Velvety extends Component {
             <div><Image centered size ='massive' src='/assets/velvety/mgsm.jpg'/><p className='text2'>Guest Speaker</p></div>
             <div><Image centered size ='large' src='/assets/velvety/pjpt.jpg'/><p className='text2'>Private Jet Marketing</p></div>
             <div><Image centered size ='huge' src='/assets/velvety/ievbw.jpg'/><p className='text2'>Daisy</p></div>
-            <div><Image centered size ='massive' src='/assets/velvety/caliVin.jpg'/><p className='text2'>California Vintage</p></div>
+            <div><Image centered size ='massive' src='/assets/velvety/caliVin.jpg'/><p className='text2'>Hosting Networking Event</p></div>
             <div><Image centered size ='massive' src='/assets/velvety/creditSussie.jpg'/><p className='text2'>Credit Sussie</p></div>
             <div><Image centered size ='huge' src='/assets/velvety/oem.jpg'/><p className='text2'>Personal Branding of Wine</p></div>
             <div><Image centered size ='massive' src='/assets/velvety/tie.jpg'/><p className='text2'>Entrepreneur Networking</p></div>

@@ -247,12 +247,12 @@ a.subLinks:hover {
 
 /* text ---------------------------------------- */
 .text {
-  color: rgb(236, 240, 235);
+  color: rgb(224, 224, 224);
   text-align: justify;
   font-size: large;
 }
 .text2 {
-  color: rgb(236, 240, 235);
+  color: rgb(224, 224, 224);
   text-align: center;
   font-size: large;
   margin-top: 0.3125em;
