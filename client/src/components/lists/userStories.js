@@ -16,8 +16,7 @@ const UserStories = () => (
       As a user, I expect be able to invite other users to my groups and join other user groups.
     </List.Item>
     <List.Item as='li' value='•'>
-    As a user, I expect to be able to send text messages to other users and receive messages
-    from other users while differentiating my messages from other messages.
+    As a user, I expect to be able to send text messages to other users and receive messages.
     </List.Item>
     <List.Item as='li' value='•'>
     As a user, I expect to be able to speak with other users using voice chat,
