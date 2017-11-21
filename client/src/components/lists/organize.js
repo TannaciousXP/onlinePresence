@@ -14,7 +14,7 @@ const Organize = () => (
       Structured, step-by-step problem solving process road map
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
-          <Image size='medium' src='/assets/artifacts/roadMap.png'/>
+          <Image size='medium' src='/assets/omniChat/roadMap.png'/>
         </List.Item>
       </List.Item>
     </List.Item>
@@ -22,7 +22,7 @@ const Organize = () => (
       Identify key choices and weigh the pros and cons
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
-          <Image size='medium' src='/assets/artifacts/keyChoices.png'/>
+          <Image size='medium' src='/assets/omniChat/keyChoices.png'/>
         </List.Item>
       </List.Item>
     </List.Item>
@@ -30,7 +30,7 @@ const Organize = () => (
       Root out assumptions and validate them as I go
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
-          <Image size='medium' src='/assets/artifacts/validation.jpg'/>
+          <Image size='medium' src='/assets/omniChat/validation.jpg'/>
         </List.Item>
       </List.Item>
     </List.Item>
@@ -38,7 +38,7 @@ const Organize = () => (
       I plan in terms of components and flows through component
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
-          <Image size='medium' src='/assets/artifacts/components.png'/>
+          <Image size='medium' src='/assets/omniChat/components.png'/>
         </List.Item>
       </List.Item>
     </List.Item>
