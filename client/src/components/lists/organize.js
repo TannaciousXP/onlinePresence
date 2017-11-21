@@ -40,8 +40,8 @@ const Organize = () => (
         <List.Item as='li' value='°'>
           Login: <br/>
           <span>
-            <Image size='large' src='/assets/wireFrames/login.png'/>
-            <Image size='large' src='/assets/omniChat/login.jpg'/>
+            <Image size='medium' src='/assets/wireFrames/login.png'/>
+            <Image size='medium' src='/assets/omniChat/login.jpg'/>
           </span>
         </List.Item>
         <List.Item as='li' value='°'>
