@@ -7,24 +7,24 @@ import {
 const ProjectManagement = () => (
   <List as='ol' value='i'>
     <List.Item as='li'>
-    Project Management
+      <strong>Project Management</strong>
       <List.Item as='ol' value='i'>
         <List.Item as='li'>
-          Trello: Ticketing system
+          <strong>Trello: </strong> Ticketing system
         </List.Item>
         <List.Item as='li'>
-          Google Drive: Create the source of truth for resources
+          <strong>Google Drive: </strong> Create the source of truth for resources
         </List.Item>
         <List.Item as='li'>
-          Google Calendar: Prioritize your day with tickets from Trello
+          <strong>Google Calendar: </strong> Prioritize your day with tickets from Trello
         </List.Item>
         <List.Item as='li'>
-          Slack: Team communication
+          <strong>Slack: </strong> Team communication
         </List.Item>
       </List.Item>
     </List.Item>
     <List.Item as='li'>
-      Pre-Gitflow
+      <strong>Pre-Gitflow</strong>
       <List.Item as='ol' value='i'>
         <List.Item as='li'>
           Fork the repo from organization to personal
@@ -35,7 +35,7 @@ const ProjectManagement = () => (
       </List.Item>
     </List.Item>
     <List.Item as='li'>
-    Gitflow
+      <strong>Gitflow</strong>
       <List.Item as='ol' value='i'>
         <List.Item as='li'>
           Rebase upstream master in your master branch
