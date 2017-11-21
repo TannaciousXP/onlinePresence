@@ -42,12 +42,11 @@ const Organize = () => (
           Login: <br/>
           <Grid>
             <Grid.Row stretched>
-              <Grid.Column>
-                <Image size='large' src='/assets/wireFrames/login.png'/>
-              </Grid.Column>
-              <Grid.Column>
-                <Image size='large' src='/assets/omniChat/login.jpg'/>
-              </Grid.Column>
+
+              <Image size='large' src='/assets/wireFrames/login.png'/>
+
+              <Image size='large' src='/assets/omniChat/login.jpg'/>
+
             </Grid.Row>
           </Grid>
         </List.Item>
