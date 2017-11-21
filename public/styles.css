@@ -262,6 +262,11 @@ a.subLinks:hover {
   color: rgb(158, 158, 158);
 }
 
+/* beforeAfter ---------------------------------------- */
+.beforeAfter {
+  display: inline-flex !important;
+}
+
 /* slideWrapper ---------------------------------------- */
 
 .swiper-container {

@@ -20,7 +20,7 @@ class OmniModal extends Component {
         onClose={closeModal}
         open={ (isModalOpen && 'Omni' === renderModal) ? true : false }
         dimmer='blurring'
-        size='fullscreen'
+        size='large'
       >
         <Modal.Header>Omni Chat</Modal.Header>
         <Modal.Content scrolling size='large'>

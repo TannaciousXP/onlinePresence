@@ -40,27 +40,39 @@ const Organize = () => (
       <List.Item as='ol'>
         <List.Item as='li' value='°'>
           <strong>Login: </strong>
-          <br/>
-          <Image size='large' src='/assets/wireFrames/login.png'/>
-          <Image size='large' src='/assets/omniChat/login.jpg'/>
+          <List.Item as='ol'>
+            <List.Item as='li' value='-'>
+              <Image className='beforeAfter' size='large' src='/assets/wireFrames/login.png'/>
+              <Image className='beforeAfter' size='large' src='/assets/omniChat/login.jpg'/>
+            </List.Item>
+          </List.Item>
         </List.Item>
         <List.Item as='li' value='°'>
           <strong>Messages: </strong>
-          <br/>
-          <Image size='large' src='/assets/wireFrames/messages.png'/>
-          <Image size='large' src='/assets/omniChat/messages.jpg'/>
+          <List.Item as='ol'>
+            <List.Item as='li' value='-'>
+              <Image className='beforeAfter' size='large' src='/assets/wireFrames/messages.png'/>
+              <Image className='beforeAfter' size='large' src='/assets/omniChat/messages.jpg'/>
+            </List.Item>
+          </List.Item>
         </List.Item>
         <List.Item as='li' value='°'>
           <strong>Video Chat: </strong>
-          <br/>
-          <Image size='large' src='/assets/wireFrames/videoChat.png'/>
-          <Image size='large' src='/assets/omniChat/video.jpg'/>
+          <List.Item as='ol'>
+            <List.Item as='li' value='-'>
+              <Image className='beforeAfter' size='large' src='/assets/wireFrames/videoChat.png'/>
+              <Image className='beforeAfter' size='large' src='/assets/omniChat/video.jpg'/>
+            </List.Item>
+          </List.Item>
         </List.Item>
         <List.Item as='li' value='°'>
           <strong>Friends: </strong>
-          <br/>
-          <Image size='large' src='/assets/wireFrames/friends.png'/>
-          <Image size='large' src='/assets/omniChat/friends.jpg'/>
+          <List.Item as='ol'>
+            <List.Item as='li' value='-'>
+              <Image className='beforeAfter' size='large' src='/assets/wireFrames/friends.png'/>
+              <Image className='beforeAfter' size='large' src='/assets/omniChat/friends.jpg'/>
+            </List.Item>
+          </List.Item>
         </List.Item>
       </List.Item>
     </List.Item>
