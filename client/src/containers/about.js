@@ -94,7 +94,7 @@ class About extends Component {
                 new ones.</p>
                 <Divider hidden/>
                 <p className='text'>
-                  <strong>Self-motivation: <br/></strong>
+                  <strong className='text3'>Self-motivation: <br/></strong>
                 Starting Cuts & Glory Co. was a difficult time for me because I didn’t
                 have my pillars of support (my business partners) anymore, and I had to
                 dig deep because I was the foundation that Cuts & Glory Co. would be built
@@ -103,7 +103,7 @@ class About extends Component {
                 </p>
                 <Divider hidden/>
                 <p className='text'>
-                  <strong>Communication: <br/></strong>
+                  <strong className='text3'>Communication: <br/></strong>
                 For Cuts & Glory Co., communication was the key to customer retention. In
                 order for me to give the customer the best experience, I needed to know
                 what the customer wanted, then explicitly let the customer know my intentions.
@@ -112,7 +112,7 @@ class About extends Component {
                 </p>
                 <Divider hidden/>
                 <p className='text'>
-                  <strong>Leadership: <br/></strong>
+                  <strong className='text3'>Leadership: <br/></strong>
                   With my increasing brand recognition in the industry, I was invited by
                   Toni & Guy to become Hong Kong’s first barber instructor. I devised a
                   course consisting of three parts, and trained over 100 stylists.
@@ -181,7 +181,7 @@ class About extends Component {
                 </p>
                 <Divider hidden/>
                 <p className='text'>
-                  <strong>Being Autonomous: <br/></strong>
+                  <strong className='text3'>Being Autonomous: <br/></strong>
                   Starting a business in a different country seemed pretty wild for
                   my friends and family. They all pointed out all the possibilities
                   of the company going under and everyone had valid points. However,
@@ -193,7 +193,7 @@ class About extends Component {
                 </p>
                 <Divider hidden/>
                 <p className='text'>
-                  <strong>Organization: <br/></strong>
+                  <strong className='text3'>Organization: <br/></strong>
                   With the role as co-founder, I needed to set up meetings and deliveries,
                   create marketing material, host events, make sales, devise business
                   plans and execute them. At first this was extremely difficult to
@@ -204,7 +204,7 @@ class About extends Component {
                 </p>
                 <Divider hidden/>
                 <p className='text'>
-                  <strong>Problem-Solving: <br/></strong>
+                  <strong className='text3'>Problem-Solving: <br/></strong>
                   Problem solving is a skill like any other, and the more you practice
                   it, the better you’ll get. With the variety of the problems I
                   encounter, I began to notice a pattern and came up with a system of

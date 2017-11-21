@@ -257,6 +257,11 @@ a.subLinks:hover {
   font-size: large;
   margin-top: 0.3125em;
 }
+
+.text3 {
+  color: rgb(158, 158, 158);
+}
+
 /* slideWrapper ---------------------------------------- */
 
 .swiper-container {
