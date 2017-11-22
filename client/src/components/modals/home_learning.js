@@ -52,7 +52,7 @@ class Learning extends Component {
             dimmer='blurring'
           >
             <Modal.Header>LEARNING</Modal.Header>
-            <Modal.Content image>
+            <Modal.Content image scrolling>
               <Image
                 wrapped
                 size='massive'
