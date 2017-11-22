@@ -91,7 +91,7 @@ class Learning extends Component {
                 <ul><strong>Science:</strong></ul>
                 <li><a className='subLinks' onClick={() => helper.openNewTab(links.learning.smarter)}>Smarter Every Day</a></li>
                 <li><a className='subLinks' onClick={() => helper.openNewTab(links.learning.vSauce)}>Vsauce</a></li>
-
+                <Divider hidden/>
               </Modal.Description>
             </Modal.Content>
             <Modal.Actions>
