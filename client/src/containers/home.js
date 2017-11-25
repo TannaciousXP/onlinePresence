@@ -72,7 +72,7 @@ class Home extends Component {
 
                 </p>
                 <Divider hidden/>
-                <p className='text'>
+                <p className='text1'>
 
                 If you’re here to assess if I’m a high yield / low risk hire, I value your time, here's a
                 quick look at my programming<a className='subLinks' onClick={() => this.show('Artifact')}> <strong>artifacts</strong></a>.

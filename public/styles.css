@@ -254,6 +254,11 @@ a.subLinks:hover {
   text-align: justify;
   font-size: large;
 }
+.text1 {
+  color: rgb(224, 224, 224);
+  font-size: 1.5em;
+  text-align: justify;
+}
 .text2 {
   color: rgb(224, 224, 224);
   text-align: center;
