@@ -44,6 +44,6 @@ There are links and also a flash back (modal of pictures) to see some of the med
 
 Two sections consisting of Projects and Project Components
 
-Projects are the full-stack application I have built, and progressing on.
+- Projects are the full-stack application I have built, and progressing on.
 
-Project componenets are the work that I have done in order to showcase my understanding of Computer Science with some of the latest technologies.
+- Project componenets are the work that I have done in order to showcase my understanding of Computer Science with some of the latest technologies.
