@@ -11,7 +11,7 @@ const ReactFrame = () => (
     <List.Item as='li' value='•'><a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.reactComp)}>React component</a></List.Item>
     <List.Item as='li' value='•'><strong>Redux:</strong>
       <List.List as='ol'>
-        <List.Item as='li' value='°'><a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.reactComp)}>Redux Action</a></List.Item>
+        <List.Item as='li' value='°'><a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.reduxAction)}>Redux Action</a></List.Item>
         <List.Item as='li' value='°'><a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.reduxReducer)}>Redux Reducer</a></List.Item>
         <List.Item as='li' value='°'><a className='subLinks' onClick={() => helper.openNewTab(links.artifacts.rootReducer)}>Root Reducer</a></List.Item>
       </List.List>
