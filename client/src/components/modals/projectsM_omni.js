@@ -27,7 +27,7 @@ class OmniModal extends Component {
           <Modal.Description>
             <Image centered size='large' src='/assets/omniChat/omniLogo.png'/>
             Logo Design by: Peter X. Tan
-            <Header size='large'>App overview</Header>
+            <Header size='large'>App Overview</Header>
             This application provides voice chat. Users will be able to signup
             and login to the application, connect with each other, and add other
             users on their friends list. They will also be able to create new
