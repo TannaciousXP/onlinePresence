@@ -5,27 +5,27 @@ const $ = require('jquery');
 // Render home page
 router.route('/')
   .get((req, res) => {
-    res.render('pages/home.ejs', {
-      title: 'Home',
-      background: `background-image: url('/assets/photos/home.jpg')`,
+    res.render('pages/projects.ejs', {
+      title: 'Projects',
+      background: `background-image: url('/assets/photos/projects.jpg')`,
     });
   });
 
 // Render about page
-router.route('/about')
+router.route('/experience')
   .get((req, res) => {
-    res.render('pages/about.ejs', {
-      title: 'About',
+    res.render('pages/experience.ejs', {
+      title: 'Experience',
       background: `background-image: url('/assets/photos/about2.jpg')`,
     });
   });
 
 // Render projects page
-router.route('/projects')
+router.route('/about')
   .get((req, res) => {
-    res.render('pages/projects.ejs', {
-      title: 'Projects',
-      background: `background-image: url('/assets/photos/projects.jpg')`,
+    res.render('pages/about.ejs', {
+      title: 'About',
+      background: `background-image: url('/assets/photos/home.jpg')`,
     });
   });
 
