@@ -20,6 +20,7 @@ import Omni from '../components/cards/projects_omni';
 import Pxt from '../components/cards/projects_pxtan';
 import Evently from '../components/cards/projects_evently';
 import HomeFeels from '../components/cards/projects_homeFeels';
+import ModalArtifacts from '../components/modals/home_artifacts';
 
 
 class Projects extends Component {
@@ -51,6 +52,13 @@ class Projects extends Component {
     let { listOfRepos } = this.props;
     return (
       <Grid container verticalAlign='middle' centered padded>
+        <Grid.Row className='project title'>
+          <Header className='title repo' as='h3' textAlign='left' floated='left'>High Yield / Low Risk Hire:</Header>
+        </Grid.Row>
+        <Grid.Row>
+          <Button color='red' size='massive' onClick={() => this.show('Artifact')}>CLICK ME</Button>
+          <ModalArtifacts/>
+        </Grid.Row>
         <Grid.Row className='project title'>
           <Header className='title repo' as='h3' textAlign='left' floated='left'>FULL-STACK PROJECTS:</Header>
         </Grid.Row>
