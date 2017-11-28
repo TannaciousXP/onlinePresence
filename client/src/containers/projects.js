@@ -53,7 +53,7 @@ class Projects extends Component {
     return (
       <Grid container verticalAlign='middle' centered padded>
         <Grid.Row className='project title'>
-          <Header className='title repo' as='h3' textAlign='left' floated='left'>High Yield / Low Risk Hire:</Header>
+          <Header className='title repo' as='h3' textAlign='left' floated='left'>HIGH YIELD / LOW RISK HIRE: </Header>
         </Grid.Row>
         <Grid.Row>
           <Button color='red' size='massive' onClick={() => this.show('Artifact')}>CLICK ME</Button>

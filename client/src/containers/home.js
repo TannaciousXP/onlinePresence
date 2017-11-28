@@ -68,16 +68,8 @@ class Home extends Component {
                 If you have a bit more time and would like to know more about me, hover over the icons and
                 click on the hidden pictures to check out my <a className='subLinks' onClick={() => helper.openNewTab(links.home.keyHabits)}> <strong>three keystone habits</strong> </a>
                 and why having pets could help you through the day.
-
-
                 </p>
                 <Divider hidden/>
-                <p className='text1'>
-
-                If you’re here to assess if I’m a high yield / low risk hire, I value your time, here's a
-                quick look at my programming<a className='subLinks' onClick={() => this.show('Artifact')}> <strong>artifacts</strong></a>.
-
-                </p>
                 <Artifact/>
               </Grid.Column>
             </Grid>
