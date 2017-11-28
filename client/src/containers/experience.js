@@ -17,7 +17,7 @@ import VelvetyModal from '../components/modals/about_velvety';
 import links from '../../../public/links';
 import helper from '../../../server/helperFuncs';
 
-class About extends Component {
+class Experience extends Component {
   constructor(props) {
     super(props);
     this.show = this.show.bind(this);
@@ -61,7 +61,7 @@ class About extends Component {
                 my passion for making a positive impact aligned perfectly with programing.</p>
                 <Divider hidden/>
                 <p className='text'>I am currently looking for a full-time position
-                where I can be happy, fully engaged, and passionate about the role I'm
+                where I can be happy, fully engaged, and passionate experience the role I'm
                 in and contribute to the shared goal.</p>
                 <Divider hidden/>
                 <p className='text'>I'm looking for a company whose culture is transparent,
@@ -124,11 +124,11 @@ class About extends Component {
                 <Divider hidden/>
                 <p className='text'>
                   <strong>Online Presence: <br/></strong>
-                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.about.cg.dapper)}><strong>Most dapper barbers</strong></a></li>
-                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.about.cg.laneCrawFord)}><strong>Lanecrawford Modern grooming</strong></a></li>
-                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.about.cg.coconut)}><strong>Versace design</strong></a></li>
-                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.about.cg.menClub)}><strong>Menclub style video</strong></a></li>
-                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.about.cg.elle)}><strong>Elle magazine</strong></a></li>
+                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.experience.cg.dapper)}><strong>Most dapper barbers</strong></a></li>
+                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.experience.cg.laneCrawFord)}><strong>Lanecrawford Modern grooming</strong></a></li>
+                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.experience.cg.coconut)}><strong>Versace design</strong></a></li>
+                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.experience.cg.menClub)}><strong>Menclub style video</strong></a></li>
+                  <li><a className='subLinks' onClick={() => helper.openNewTab(links.experience.cg.elle)}><strong>Elle magazine</strong></a></li>
 
                 </p>
               </Grid.Column>
@@ -170,7 +170,7 @@ class About extends Component {
                 <br/>
                 <p className='text'>
                 Velvety came to be because of the urge to move back to Hong Kong after
-                my year abroad there, and my term projects about exporting red wine to
+                my year abroad there, and my term projects experience exporting red wine to
                 Asia for my degree in International Business. We started with just
                 providing the market with our own personal brand of wines, Velvety.
                 The company grew to include logistical services, personal branding of
@@ -224,7 +224,7 @@ class About extends Component {
                 <Divider hidden/>
                 <p className='text'>
                   <strong>Online Presence:<br/></strong>
-                  <li>Hong Kong's biggest wine blog: <a className='subLinks' onClick={() => helper.openNewTab(links.about.velvety.wineTimes)}>
+                  <li>Hong Kong's biggest wine blog: <a className='subLinks' onClick={() => helper.openNewTab(links.experience.velvety.wineTimes)}>
                     <strong> WinetimesHK</strong></a></li>
                 </p>
               </Grid.Column>
@@ -241,4 +241,4 @@ const mapStateToProps = (state, ownProps) => {
   };
 };
 
-export default connect (mapStateToProps, {showModal, viewModal})(About);
+export default connect (mapStateToProps, {showModal, viewModal})(Experience);

@@ -54,7 +54,7 @@ let links = {
     smarter: 'https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA',
     vSauce: 'https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA'
   },
-  about: {
+  experience: {
     'cg': {
       dapper: 'http://www.lifestyleasia.com/453428/the-cut-hong-kongs-most-dapper-barbers/#2',
       laneCrawFord: 'http://www.lanecrawford.com/discover/the-new-modern-grooming-checklist-64200009-20160831/shop/',
