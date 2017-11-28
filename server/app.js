@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 // Redirect to appropriate page
 app.use('/', routes.server);
 // Use projects to fetch repos
-app.use('/projects/fetch', routes.projects);
+app.use('/fetch', routes.projects);
 
 
 module.exports = app;

@@ -17,12 +17,11 @@ const enhancers = compose(
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
 const App = () => (
-  <div>HI</div>
+  <Provider store={createStoreWithMiddleware(reducers, {}, enhancers)}>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  </Provider>
 );
-// <Provider store={createStoreWithMiddleware(reducers, {}, enhancers)}>
-//   <BrowserRouter>
-//     <Router />
-//   </BrowserRouter>
-// </Provider>
 
 render(<App />, document.getElementById('app'));

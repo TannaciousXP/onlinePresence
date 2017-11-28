@@ -43,7 +43,7 @@ export let repoFetched = function() {
 
 /* listOFRepos state ----------------------------------- */
 export let fetchReposList = function(userName) {
-  const request = axios.get(`/projects/fetch/${userName}`).catch(err => err);
+  const request = axios.get(`/fetch/${userName}`).catch(err => err);
   return {
     type: FETCH_REPOS_LIST,
     payload: request

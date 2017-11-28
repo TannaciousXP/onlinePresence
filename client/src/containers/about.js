@@ -24,7 +24,7 @@ import links from '../../../public/links';
 import helper from '../../../server/helperFuncs';
 
 
-class Home extends Component {
+class About extends Component {
   constructor(props) {
     super(props);
     this.close = this.close.bind(this);
@@ -111,4 +111,4 @@ export default connect (mapStateToProps, {
   closeModal,
   showModal,
   viewModal
-})(Home);
+})(About);
