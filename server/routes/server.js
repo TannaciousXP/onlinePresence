@@ -20,11 +20,6 @@ router.route('/about')
     });
   });
 
-// height: `height: $(function(){
-//   ($(document).height() - ($(#nav).height() + $(#footer).height()))
-// })`
-// $('.content').css('height', $(document).height() - ($('.header').height() + $('.footer').height() + `MARGIN TOP OR PADDING`) - $('.contact').height());
-
 // Render projects page
 router.route('/projects')
   .get((req, res) => {
