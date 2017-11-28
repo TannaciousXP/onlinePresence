@@ -3,7 +3,7 @@ import { Card, Icon, Image, Button, Grid } from 'semantic-ui-react';
 
 const HFCard = ({card}) => (
   <Grid.Column className='projects'>
-    <Card>
+    <Card className='projectCards'>
       <Image src='/assets/homeFeels/homeFeels.jpg'/>
       <Card.Content>
         <Card.Header>
@@ -16,7 +16,7 @@ const HFCard = ({card}) => (
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <Button disabled color='red'>Show Details</Button>
+        <Button compact disabled color='red'>Show Details</Button>
       </Card.Content>
     </Card>
   </Grid.Column>

@@ -7,7 +7,7 @@ import OmniModal from '../modals/projectsM_omni';
 const OmniCard = ({card, show}) => {
   return (
     <Grid.Column className='projects'>
-      <Card>
+      <Card className='projectCards'>
         <Image src='/assets/omniChat/omniLogo.png'/>
         <Card.Content>
           <Card.Header>
@@ -20,7 +20,7 @@ const OmniCard = ({card, show}) => {
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-          <Button color='red' onClick={() => show('Omni')}>Show Details</Button>
+          <Button compact color='red' onClick={() => show('Omni')}>Show Details</Button>
           <OmniModal/>
         </Card.Content>
       </Card>

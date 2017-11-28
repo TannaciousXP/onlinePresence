@@ -3,7 +3,7 @@ import { Card, Icon, Image, Button, Grid } from 'semantic-ui-react';
 
 const PxtCard = ({card}) => (
   <Grid.Column className='projects'>
-    <Card>
+    <Card className='projectCards'>
       <Image src='/assets/logos/pxt.png'/>
       <Card.Content>
         <Card.Header>
@@ -16,7 +16,7 @@ const PxtCard = ({card}) => (
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <Button color='red' disabled>Show Details</Button>
+        <Button compact color='red' disabled>Show Details</Button>
       </Card.Content>
     </Card>
   </Grid.Column>

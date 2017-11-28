@@ -215,6 +215,19 @@ border-bottom: 1px solid rgba(255, 255, 255, .2);
 	padding-bottom: 0.3125em !important;
 }
 
+/* projectCards ---------------------------------------- */
+
+.projectCards {
+  width: 18.13rem;
+  height: 100%
+}
+
+.projectCards img {
+  width: 16.06rem;
+  height: 16.06rem;
+}
+
+
 /* cardsDisplay ---------------------------------------- */
 
 .card {
