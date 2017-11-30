@@ -60,16 +60,15 @@ class Experience extends Component {
                 solve a novel problem that persisted in Hong Kong for hosting events. I realized
                 my passion for making a positive impact aligned perfectly with programing.</p>
                 <Divider hidden/>
-                <p className='text'>I am currently looking for a full-time position
-                where I can be happy, fully engaged, and passionate experience the role I'm
-                in and contribute to the shared goal.</p>
+                <p className='text'>I am currently looking for a full-time position where I can
+                be happy, fully engaged, and passionate about my role to contribute
+                to the shared goal.</p>
                 <Divider hidden/>
-                <p className='text'>I'm looking for a company whose culture is transparent,
-                harmonious, and well-organized; a company that invests in their employees
-                and that fosters professional and personal growth. This is the kind of
-                company that I would love to contribute to, where I can utilize the
-                transferrable skills I have acquired over the years, such as creative
-                problem-solving, communication, organization, leadership and autonomy. </p>
+                <p className='text'>I'm looking for a company whose culture is transparent, harmonious,
+                and well-organized; a company that invests in their employees and fosters professional
+                and personal growth. This kind of company is where I would love to contribute to,
+                where I can utilize the transferable skills I have acquired over the years, such as
+                creative problem-solving, communication, organization, leadership and autonomy.</p>
                 <Divider hidden/>
                 <p className='text'>
                   <strong className='subLinks'>Hover over the icon</strong> for a surprise =] <br/>
