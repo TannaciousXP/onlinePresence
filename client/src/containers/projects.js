@@ -53,32 +53,33 @@ class Projects extends Component {
     return (
       <Grid container verticalAlign='middle' centered padded>
         <Grid.Row className='project title'>
-          <Header className='title repo' as='h3' textAlign='left' floated='left'>HIGH YIELD / LOW RISK HIRE: </Header>
+          <Header className='title repo' as='h3' textAlign='left' floated='left'>PROGRAMING ARTIFACTS: </Header>
         </Grid.Row>
         <Grid.Row>
-          <Button color='red' size='massive' onClick={() => this.show('Artifact')}>CLICK ME</Button>
+          <Button color='red' size='massive' onClick={() => this.show('Artifact')}>TAKE A LOOK</Button>
           <ModalArtifacts/>
         </Grid.Row>
-        <Grid.Row className='project title'>
+        <Grid.Row className='project title' stretched>
           <Header className='title repo' as='h3' textAlign='left' floated='left'>FULL-STACK PROJECTS:</Header>
         </Grid.Row>
 
-        <Grid.Row columns={4} stretched>
+        <Grid.Row>
+          <Card.Group stackable>
+            {
+              JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos[0], repo => {
+                if (repo.name === listOfRepos[2][0]) {
+                  return <Omni key={repo.id} card={repo} show={this.show}/>;
+                } else if (repo.name === listOfRepos[2][1]) {
+                  return <Pxt key={repo.id} card={repo}/>;
+                } else if (repo.name === listOfRepos[2][2]) {
+                  return <Evently key={repo.id} card={repo}/>;
+                } else {
+                  return <HomeFeels key={repo.id} card={repo}/>;
+                }
+              }) : null
 
-          {
-            JSON.stringify(listOfRepos) !== JSON.stringify({}) ? _.map(listOfRepos[0], repo => {
-              if (repo.name === listOfRepos[2][0]) {
-                return <Omni key={repo.id} card={repo} show={this.show}/>;
-              } else if (repo.name === listOfRepos[2][1]) {
-                return <Pxt key={repo.id} card={repo}/>;
-              } else if (repo.name === listOfRepos[2][2]) {
-                return <Evently key={repo.id} card={repo}/>;
-              } else {
-                return <HomeFeels key={repo.id} card={repo}/>;
-              }
-            }) : null
-
-          }
+            }
+          </Card.Group>
 
         </Grid.Row>
 
