@@ -10,6 +10,8 @@ import reducers from './reducers';
 
 import Router from './components/router';
 
+import registerServiceWorker from './registerServiceWorker';
+
 const enhancers = compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f
 );
@@ -25,3 +27,5 @@ const App = () => (
 );
 
 render(<App />, document.getElementById('app'));
+
+registerServiceWorker();
